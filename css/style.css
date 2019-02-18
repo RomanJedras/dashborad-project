@@ -734,8 +734,25 @@ body {
   .form input[type$=text] {
     text-align: center;
     height: 38px;
-    border: 1px solid #e3e3e3;
+    border-color: transparent;
     border-radius: 3px; }
+
+.one {
+  border: 1px solid #e3e3e3;
+  border-right: 0;
+  margin-right: -9px; }
+  .one:before {
+    content: "";
+    border-right: 1px solid #3333;
+    position: absolute;
+    margin-left: 182px;
+    padding: 18px 0;
+    top: 5px; }
+
+.sec {
+  border: 1px solid #dedede;
+  margin-left: 8px;
+  border-left-color: transparent; }
 
 @media (min-width: 768px) {
   /* For desktop: */
