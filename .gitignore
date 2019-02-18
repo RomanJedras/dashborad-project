@@ -10,7 +10,8 @@ node_modules
 README.md
 package-lock.json
 sass/.sass-cache
-sass/
+sass
+
 
 # Runtime data
 pids
