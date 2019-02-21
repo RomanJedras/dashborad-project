@@ -552,7 +552,8 @@ body {
 
 .icon-dolar {
   font-style: inherit;
-  color: #9c9c9c; }
+  color: #9c9c9c;
+  font-size: 18px; }
 
 .components-quit {
   padding: 0 40px; }
@@ -576,7 +577,8 @@ body {
   position: relative;
   padding: 0 5px; }
 .components-login p {
-  margin-left: 12px; }
+  margin-left: 12px;
+  font-size: 15px; }
 
 .wrapper {
   position: fixed;
