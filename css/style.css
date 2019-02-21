@@ -751,6 +751,41 @@ body {
   margin-left: 23px;
   font-size: 23px; }
 
+.box,
+.box1 {
+  margin-top: 62px;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  left: 123px;
+  position: relative; }
+  .box p,
+  .box1 p {
+    color: #a6a6a6; }
+    .box p::after,
+    .box1 p::after {
+      border-bottom: 1px solid #e3e3e3;
+      width: 38%;
+      padding-bottom: 43px;
+      position: absolute;
+      content: "";
+      margin-left: -140px; }
+  .box span,
+  .box1 span {
+    left: 143px;
+    position: relative;
+    color: #696969; }
+
+.box1 p:first-child span {
+  margin-left: 63px; }
+  .box1 p:first-child span::after {
+    width: 264px;
+    left: 202px; }
+.box1 p:last-child::after {
+  left: 504px; }
+.box1 p:last-child span {
+  left: 163px; }
+
 @media (min-width: 768px) {
   /* For desktop: */
   .col-m-1 {
