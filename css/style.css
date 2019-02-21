@@ -514,13 +514,13 @@ body {
   display: flex;
   flex-wrap: wrap; }
 
-.nav {
+.nav-horizont {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   background-color: #FFFFFF;
   display: flex; }
-  .nav div {
+  .nav-horizont div {
     height: 59px;
     width: 100%;
     display: flex;
