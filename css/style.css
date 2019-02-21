@@ -518,7 +518,8 @@ body {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  display: flex; }
   .nav div {
     height: 59px;
     width: 100%;
@@ -750,6 +751,42 @@ body {
     flex: 0 0 91.6666666667%; }
 
   .col-m-12 {
+    flex: 0 0 100%; }
+
+  .f-1 {
+    flex: 0 0 8.3333333333%; }
+
+  .f-2 {
+    flex: 0 0 16.6666666667%; }
+
+  .f-3 {
+    flex: 0 0 25%; }
+
+  .f-4 {
+    flex: 0 0 33.3333333333%; }
+
+  .f-5 {
+    flex: 0 0 41.6666666667%; }
+
+  .f-6 {
+    flex: 0 0 50%; }
+
+  .f-7 {
+    flex: 0 0 58.3333333333%; }
+
+  .f-8 {
+    flex: 0 0 66.6666666667%; }
+
+  .f-9 {
+    flex: 0 0 75%; }
+
+  .f-10 {
+    flex: 0 0 83.3333333333%; }
+
+  .f-11 {
+    flex: 0 0 91.6666666667%; }
+
+  .f-12 {
     flex: 0 0 100%; } }
 @media (max-width: 767px) {
   /* For tablets: */
@@ -787,6 +824,42 @@ body {
     flex: 0 0 91.6666666667%; }
 
   .col-s-12 {
+    flex: 0 0 100%; }
+
+  .f-1 {
+    flex: 0 0 8.3333333333%; }
+
+  .f-2 {
+    flex: 0 0 16.6666666667%; }
+
+  .f-3 {
+    flex: 0 0 25%; }
+
+  .f-4 {
+    flex: 0 0 33.3333333333%; }
+
+  .f-5 {
+    flex: 0 0 41.6666666667%; }
+
+  .f-6 {
+    flex: 0 0 50%; }
+
+  .f-7 {
+    flex: 0 0 58.3333333333%; }
+
+  .f-8 {
+    flex: 0 0 66.6666666667%; }
+
+  .f-9 {
+    flex: 0 0 75%; }
+
+  .f-10 {
+    flex: 0 0 83.3333333333%; }
+
+  .f-11 {
+    flex: 0 0 91.6666666667%; }
+
+  .f-12 {
     flex: 0 0 100%; } }
 
 /*# sourceMappingURL=style.css.map */
