@@ -674,10 +674,22 @@ body {
   position: relative;
   float: right; }
 
+.form-vertical::after {
+  content: "";
+  border-bottom: 1px solid #e3e3e3;
+  width: 100%;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  padding-bottom: 50px; }
+
 .form {
   display: flex;
   justify-content: center;
-  position: relative; }
+  position: relative;
+  margin-top: 70px;
+  padding: 0 87px;
+  width: 100%; }
   .form i {
     position: absolute;
     margin-top: 13px;
@@ -720,6 +732,24 @@ body {
     color: #c4c4c4;
     text-transform: uppercase;
     font-weight: 200; }
+    .top-bar h4::after {
+      content: "";
+      border-bottom: 1px solid #e3e3e3;
+      width: 100%;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      padding-bottom: 10px; }
+
+.button button {
+  background-color: #F58220;
+  overflow: hidden;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  margin-left: 23px;
+  font-size: 23px; }
 
 @media (min-width: 768px) {
   /* For desktop: */
