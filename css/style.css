@@ -514,6 +514,11 @@ body {
   display: flex;
   flex-wrap: wrap; }
 
+.site-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 15px 0; }
+
 .nav-horizont {
   flex-direction: row;
   justify-content: flex-end;
@@ -703,9 +708,8 @@ body {
   background-color: #FFFFFF;
   z-index: 1;
   padding: 0 35px;
-  margin: 20px auto 0;
   width: 100%;
-  left: 28px;
+  margin-left: -90px;
   position: relative;
   display: flex;
   flex-direction: column;
