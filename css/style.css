@@ -777,6 +777,7 @@ body {
 .stat-item-num {
   display: flex;
   justify-content: center;
+  flex-direction: row;
   width: 100%; }
   .stat-item-num div {
     flex: 0 0 40%;
@@ -806,6 +807,59 @@ body {
   margin: 74px 193px 0;
   text-transform: capitalize;
   color: #696969; }
+
+.legend-color {
+  display: flex;
+  justify-content: center;
+  position: relative; }
+  .legend-color div {
+    flex: 0 0 13.33%;
+    margin-top: 33px;
+    background-color: #f3f3f3;
+    margin-left: 5px; }
+    .legend-color div:last-child {
+      background-color: transparent;
+      border: none; }
+
+.gl-blue {
+  color: #80bfca;
+  font-size: 32px;
+  margin: -5px 12px; }
+
+.icon-circle-blue {
+  max-width: 129px;
+  max-height: 39px; }
+  .icon-circle-blue span:last-child, .icon-circle-blue span .ftd-label {
+    color: #a6a6a6; }
+
+.icon-circle-orange {
+  max-width: 90px;
+  max-height: 40px; }
+  .icon-circle-orange span:first-child {
+    font-size: 32px;
+    margin: 12px 23px; }
+
+.ftd-label {
+  margin: 12px auto;
+  top: -49px;
+  left: 44px;
+  position: relative;
+  color: #a6a6a6; }
+
+.icon-green {
+  top: -3px;
+  left: -110px; }
+
+.earned {
+  margin: 12px auto;
+  top: 31px;
+  left: 58%;
+  position: absolute; }
+
+.chart {
+  margin: 20px 203px;
+  display: block;
+  width: 100%; }
 
 @media (min-width: 768px) {
   /* For desktop: */
