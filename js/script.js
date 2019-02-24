@@ -17,3 +17,31 @@ for (let i = 0; i < list.length; i++) {
         this.className += " active";
     });
 }
+
+function isHover(e) {
+    return (e.parentElement.querySelector(':hover') === e);
+}
+
+const myDiv = document.getElementById('links');
+const myTr = myDiv.getElementsByTagName('tr');
+
+stlelist = undefined;
+for(let i = 0; i< myTr.length; i++) {
+    myTr[i].addEventListener("mousemove", function checkHover() {
+        let hovered = isHover(myDiv);
+        let current = document.getElementsByClassName("icon-ok");
+        if (hovered && current.length > 0) {
+            current[0].className = current[0].className.replace(" icon-ok", "");
+        }
+        this.className += " icon-ok";
+    })
+
+    myTr[i].addEventListener("mouseleave", function checkHover() {
+        let hovered = isHover(myDiv);
+
+        if (! hovered) {
+            this.classList.remove('icon-ok');
+        }
+
+    })
+}
