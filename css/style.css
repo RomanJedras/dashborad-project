@@ -906,7 +906,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  margin: 0 273px 90px; }
+  margin: 0 273px 24px; }
   .table-responsive table {
     flex: 0 0 50%;
     border-spacing: 0; }
