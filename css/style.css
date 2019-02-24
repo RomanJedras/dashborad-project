@@ -746,8 +746,8 @@ body {
   background-color: #FFFFFF;
   z-index: 1;
   width: 75%;
-  position: absolute;
-  margin: 0 auto 39px;
+  position: relative;
+  margin: 0 auto 3px;
   padding: 0 15px; }
   .top-bar h4 {
     color: #c4c4c4;
@@ -780,7 +780,7 @@ body {
   .stat-item-num div {
     flex: 0 0 40%;
     color: #a6a6a6;
-    margin: 0 -28px;
+    margin: 20px -28px 0;
     position: relative;
     left: -67px; }
     .stat-item-num div p {
@@ -858,6 +858,86 @@ body {
   margin: 20px 203px;
   display: block;
   width: 100%; }
+
+/*Style links*/
+.clear-pos {
+  clear: both;
+  display: table;
+  overflow: hidden; }
+
+.top-links {
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  margin: 15px 113px 0;
+  padding: 0 15px;
+  width: 100%;
+  justify-content: center; }
+
+.links-elements {
+  flex: 0 0 75%;
+  background-color: #FFF;
+  padding: 0 15px;
+  background-color: #FFFFFF; }
+  .links-elements h4 {
+    font-weight: 200;
+    text-transform: uppercase;
+    color: #a6a6a6; }
+
+.orange-button {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 24px; }
+  .orange-button button {
+    width: 125px;
+    height: 40px;
+    background-color: #F58220;
+    border-radius: 7px;
+    border-left: none;
+    bordr-right: none; }
+    .orange-button button:before {
+      content: "+ add new";
+      color: #FFF;
+      font-size: 21px; }
+
+.table-responsive {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 273px 90px; }
+  .table-responsive table {
+    flex: 0 0 50%;
+    border-spacing: 0; }
+    .table-responsive table tr td {
+      padding: 8px;
+      line-height: 1.42857143;
+      vertical-align: top;
+      border-top: 1px solid #ddd; }
+      .table-responsive table tr td:first-child {
+        color: #a6a6a6;
+        width: 306px;
+        padding-right: 78px; }
+      .table-responsive table tr td:last-child {
+        color: #56819f;
+        width: 430px; }
+
+.icon {
+  visibility: hidden; }
+  .icon i {
+    color: #000000;
+    padding-left: 4px; }
+
+.icon-ok span {
+  visibility: visible; }
+
+.table-hover > tbody > tr:hover {
+  background-color: #f5f5f5; }
+
+.table-padding {
+  border-bottom: 1px solid #ddd;
+  display: block; }
 
 @media (min-width: 768px) {
   /* For desktop: */
