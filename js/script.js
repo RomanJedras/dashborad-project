@@ -1,8 +1,9 @@
 
-// let navIcon = document.getElementById('nav-icon1');
-// navIcon.addEventListener('click',function () {
-//     this.classList.toggle('open');
-// });
+
+let navIcon = document.getElementById('nav-icon1');
+navIcon.addEventListener('click',function () {
+    this.classList.toggle('open');
+});
 
 
 const ulList = document.getElementById("nav"),
