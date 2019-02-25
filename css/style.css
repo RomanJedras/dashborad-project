@@ -874,7 +874,8 @@ body {
   overflow: hidden; }
 
 .links-elements {
-  width: 100%;
+  width: calc(100% - 3px);
+  margin: 0 auto;
   padding: 0 15px;
   background-color: #FFFFFF; }
   .links-elements h4 {
@@ -903,11 +904,11 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
-  margin: 0 273px 24px; }
+  margin: 0 auto 24px; }
   .table-responsive table {
-    flex: 0 0 50%;
-    border-spacing: 0; }
+    border-spacing: 0;
+    width: calc(100% - 248px);
+    margin: 0 auto; }
     .table-responsive table tr td {
       padding: 8px;
       line-height: 1.42857143;
@@ -915,8 +916,7 @@ body {
       border-top: 1px solid #dadddd; }
       .table-responsive table tr td:first-child {
         color: #a6a6a6;
-        width: 306px;
-        marrgin-right: 78px; }
+        width: 312px; }
       .table-responsive table tr td:last-child {
         color: #56819F;
         width: 430px; }
