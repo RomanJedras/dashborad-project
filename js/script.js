@@ -1,8 +1,18 @@
 
 
-let navIcon = document.getElementById('nav-icon1');
+const navIcon = document.getElementById('nav-icon1'),
+    sidebar = document.getElementById('sidebar'),
+    siteWraper = document.getElementById('stw'),
+    linkItem = document.getElementById('ln');
+
 navIcon.addEventListener('click',function () {
     this.classList.toggle('open');
+    sidebar.style.display = 'block';
+    sidebar.classList.toggle('menu-open');
+    siteWraper.classList.toggle('width');
+    linkItem.classList.toggle('link-nav');
+
+
 });
 
 
