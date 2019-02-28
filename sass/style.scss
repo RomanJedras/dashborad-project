@@ -3,7 +3,9 @@
 @import "normalize";
 @import "layout";
 @import "variables";
+
 /* Components */
+
 @import "components/buttons";
 @import "components/icons";
 @import "components/chamburger.scss";
@@ -12,8 +14,7 @@
 @import url('../css/Glyphter.css');
 @import url('https://fonts.googleapis.com/css?family=Felipa|Fredericka+the+Great|Marmelad');
 
-
-body {
+body  {
   font-family: $brand-font;
   margin: 0;
   background-color: $brand-bk-g-c;
@@ -44,7 +45,7 @@ body {
   justify-content: center;
   margin-left: auto;
   margin-top: 15px;
-}
+ }
 
 .nav-horizont {
   display: flex;
@@ -66,6 +67,17 @@ body {
   flex: 0 0 173px;
   border-left: .5px solid $brand-bk-g-c;
   border-right: .5px solid $brand-bk-g-c;
+
+  i {
+    font-size: 22px;
+    @include centerLeft(0,0, relative);
+  }
+
+  p {
+    margin-left: 12px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
 }
 
 .glyphicon-one-fine-dot:before {
@@ -76,18 +88,16 @@ body {
   padding: 0 20px;
   border-left: 1px solid $brand-bk-g-c;
   flex: 0 0 62px;
+
+  i {
+    @include centerLeft(20%,13%);
+  }
 }
 
 .gl-orange {
   font-size: 21px;
   @include centerLeft(5px,31px);
   color: $brand-activeLinkLg-color;
-}
-
-.components-bell {
-  i {
-    @include centerLeft(20%,13%);
-  }
 }
 
 .icon-dolar {
@@ -105,38 +115,26 @@ body {
 .components-login,
 .components-quit {
   padding: 0 10px;
- }
+}
 
 .components-well {
   font-size: 17px;
   border-left: .5px solid $brand-bk-g-c;
   flex: 0 0 172px;
-}
+ }
 
 .icon-notification,
 .icon-quit {
   font-size: 23px;
 }
 
-.components-login {
-    i {
-      font-size: 22px;
-      @include centerLeft(0,0, relative);
-    }
-
-    p {
-      margin-left: 12px;
-      font-size: 14px;
-      white-space: nowrap;
-    }
- }
-
 .wrapper {
   position: fixed;
   height: 100%;
   overflow-y: auto;
   top: 0;
-  left:0; right:0;
+  left: 0;
+  right: 0;
   background-color: $back-color;
   width: 250px;
   display: flex;
@@ -164,6 +162,7 @@ body {
 
     li {
       height: 39px;
+
       &.active {
         border-left: 2px solid $brand-activeLinkLg-color;
         background-color: $brand-gray-color;
@@ -174,21 +173,24 @@ body {
 }
 
 .navigation-menu {
+
   list-style: none;
   display: contents;
+
   li {
      a {
        text-align: center;
        text-decoration: none;
        color: $brand-linka-color;
-       &:hover {
+       &: hover {
          color: #FFFFFF;
        }
      }
+
      i {
        padding-right: 14px;
        padding-left: 18px;
-       color:  $brand-nav-icon;
+       color: $brand-nav-icon;
        font-size: 23px;
        position: relative;
        top: 5px;
@@ -205,6 +207,7 @@ body {
 .menager-circle-item {
   border-top: 1px solid $brand-gray-color;
   margin-top: 20px;
+
   h4 {
     text-transform: uppercase;
     text-align: center;
@@ -223,6 +226,7 @@ body {
   margin: 0 32px;
   display: inline-block;
   left: -24px;
+
   i {
     background: url("../images/manager.png") no-repeat center;
     height: 70px;
@@ -276,7 +280,7 @@ body {
     margin-left: 139px;
   }
 
-  input[type$=text] {
+  input[type&=text] {
     text-align: center;
     height: 38px;
     border-color: transparent;
@@ -289,18 +293,20 @@ body {
 }
 
 .one {
+
   border: 1px solid $brand-top-padding;
   border-right: 0;
   margin-right: -9px;
 
   &:before {
+
     content: "";
     border-right: 1px solid $brand-gray-color;
     position: absolute;
     margin-left: 182px;
     padding: 18px 0;
     top: 5px;
-  }
+   }
 }
 
 .sec {
@@ -331,8 +337,8 @@ body {
         left: 0;
         padding-bottom: 10px;
       }
-    }
   }
+}
 
 .button button {
   background-color: $brand-activeLinkLg-color;
@@ -372,7 +378,7 @@ body {
           top: 21px;
           left: 0;
         }
-      }
+     }
 
      span {
        position: absolute;
@@ -380,17 +386,17 @@ body {
        color: $brand-space-color;
      }
    }
- }
+}
 
 .charts {
   width: calc(100% - 381px);
   margin: 0 auto;
+
   h4 {
     text-transform: capitalize;
     color: $brand-space-color;
   }
 }
-
 
 .legend-color {
   display: flex;
@@ -432,6 +438,7 @@ body {
   max-height: 39px;
   margin-right: 49px;
   position: relative;
+
   span {
     &:last-child, .ftd-label {
       color: $brand-color-text;
@@ -444,6 +451,7 @@ body {
   max-height: 40px;
   margin-right: 40px;
   position: relative;
+
       span {
         &:first-child {
           font-size: 32px;
@@ -477,6 +485,7 @@ body {
   display: block;
   width: calc(100% - 347px);
   margin: 0 auto;
+
     img {
     width: 100%;
       max-width: 100%;
@@ -523,10 +532,9 @@ body {
       content: "+ add new";
       color: #FFF;
       font-size: 21px;
-    }
-  }
+     }
+   }
  }
-
 
 .table-responsive {
   display: flex;
@@ -538,12 +546,15 @@ body {
       border-spacing: 0;
       width: calc(684px - 31px);
       margin: 0 auto;
+
       tr {
         vertical-align: top;
         border-top: 1px solid $brand-border-lineTable;
         position: relative;
+
         td {
           position: relative;
+
           &:first-child {
             color: $brand-color-text;
             flex: 0 0 311px;
@@ -561,6 +572,9 @@ body {
   }
 
 .table-padding {
+  border-bottom: 1px solid $brand-border-lineTable;
+  display: block;
+
   tr {
     display: flex;
     justify-content: flex-start;
@@ -569,7 +583,8 @@ body {
 }
 
 .icon {
-    visibility:hidden;
+    visibility: hidden;
+
     i {
       color: $paragraph-color;
       padding-left: 21px;
@@ -586,12 +601,6 @@ body {
     background-color: $brand-hover-table;
   }
 
-  .table-padding {
-    border-bottom: 1px solid $brand-border-lineTable;
-    display: block;
-  }
-
-
   @media (max-width: 1099px) {
     .singups {
       @include centerLeft(-19px,39px,relative);
@@ -601,6 +610,7 @@ body {
   @media (max-width: 999px) and (min-width: 860px) {
     .table-responsive table {
       width: calc(684px - 120px);
+
       tr {
         td {
           &:first-child {
@@ -612,21 +622,25 @@ body {
 
     .stat-item-num {
       flex-direction: column;
+
       div {
         margin: 0 16px;
         flex: 0 0 14px;
+
         p {
 
-          &:after {
+          &: after {
             width: 90%;
             margin: 0 auto;
           }
         }
+
         span {
           left: 353px;
         }
       }
     }
+
     .singups {
       top: -18px;
       position: relative;
@@ -641,6 +655,7 @@ body {
   @media (max-width: 859px) and (min-width: 768px){
     .table-responsive table {
       width: calc(684px - 220px);
+
       tr {
         td {
           &:first-child {
@@ -649,28 +664,33 @@ body {
         }
       }
     }
+
     .stat-item-num {
       flex-direction: column;
+
       div {
         margin: 0 16px;
         flex: 0 0 14px;
         width: calc(100% - 2px);
-        p {
 
-          &:after {
+        p {
+          &: after {
             width: 80%;
           }
         }
+
         span {
           left: 311px;
         }
       }
     }
+
     .singups {
       top: -18px;
       position: relative;
       left: 42px;
     }
+
     .chart {
       width: 400px;
     }
@@ -679,11 +699,13 @@ body {
   @media (max-width: 768px) and (min-width: 720px) {
     .stat-item-num {
       flex-direction: column;
+
       div {
         height: 115px;
         flex: 0 0 25%;
+
         p {
-          &:after {
+          &: after {
             width: 91%;
           }
 
@@ -696,6 +718,7 @@ body {
 
     .table-responsive table {
       flex: 0 0 460px;
+
       tr {
         td {
           &:first-child {
@@ -721,17 +744,20 @@ body {
   }
 
   @media (min-width: 768px) {
+
   /* For desktop: */
+
   .container {
     max-width: 100%;
     flex-flow: row nowrap;
     overflow-x: auto;
   }
-  @for $i from 1 through 12 {
+
     #nav-icon1 {
       display: none;
     }
 
+  @for $i from 1 through 12 {
     .f-#{$i} {
       flex: 0 0 ($i/12*100%)
     }
@@ -739,6 +765,7 @@ body {
 }
 
   @media (max-width: 767px) {
+
     /* For tablets: */
 
     .container {
@@ -749,6 +776,7 @@ body {
 
     .wrapper {
       display: none;
+
       h3 {
         left: 11px;
       }
@@ -760,7 +788,6 @@ body {
 
     .menu-left {
       left: -253px;
-      //position: absolute;
       -webkit-transition: all 0.3s ease;
       -moz-transition: all 0.3s ease;
       transition: all 0.3s ease;
@@ -770,31 +797,25 @@ body {
       left: 0;
     }
 
-    .width, .link-nav {
-      width: calc(100% - 250px);
-    }
+  .width, .link-nav {
+    width: calc(100% - 250px);
+  }
 
-    .chart {
-      width: calc(100% - 257px);
-      img {
-         width: 270px;
-         max-width: 320px;
-       }
-    }
 
-    @for $i from 1 through 12 {
-      .f-#{$i} {
-        flex: 0 0 ($i/12*100%)
-      }
+  .chart {
+    width: calc(100% - 257px);
+
+    img {
+    width: 270px;
+    max-width: 320px;
+  }
+ }
+
+    @for  $i from 1 through 12 {
+      .f-#{$i} { flex: 0 0 ($i/12*100%) }
     }
   }
 
-  @media (max-width: 576px){
-  .container {
-    max-width: 100%;
-    flex-flow: row nowrap;
-    overflow-x: auto;
-  }
-}
+
 
 
