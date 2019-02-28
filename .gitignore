@@ -9,8 +9,9 @@ node_modules
 .sass-cache
 README.md
 package-lock.json
-
-
+.stylelintrc
+.stylelintrc.json
+sass/stylelint.config.js
 
 
 
