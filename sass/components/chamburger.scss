@@ -1,0 +1,58 @@
+
+@import "../variables";
+@import "../mixins";
+
+
+#nav-icon1 {
+  @include sizeButton(45px,40px,fixed);
+  margin: 51px 0 0 12px;
+  @include transRotate(0);
+  @include animationTran(.5s);
+  left: 168px;
+  z-index: 9999;
+  cursor: pointer;
+  top: -12px;
+}
+
+#nav-icon1 span {
+  display: block;
+  @include sizeButton(4px,28px);
+  background-color: $brand-button-cham;
+  opacity: 1;
+  left: 0;
+  @include transRotate(0);
+  @include animationTran();
+ }
+
+#nav-icon1 span:nth-child(1) {
+  @include positionTop(0);
+}
+
+#nav-icon1 span:nth-child(2) {
+  @include positionTop(9px);
+ }
+
+#nav-icon1 span:nth-child(3) {
+  @include positionTop(18px);
+}
+
+#nav-icon1.open span:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
