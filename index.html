@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="UTF-8">
   <title>Dashboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.prefixed.css">
 </head>
 <body class="pmenu-push">
 <header class="container">
@@ -19,7 +19,7 @@
       </div>
     <div class="components-login">
         <i class="icon-profile"></i><p class="login-name"> Leonardo Dicaprio</p>
-      </div>
+    </div>
     <div class="components-quit">
         <span class="icon-quit"></span>
     </div>
@@ -36,19 +36,19 @@
       <div class="f-12">
         <h4>General statistic</h4>
         <div class="form-vertical">
-                <form action="#" class="form">
-                  <div class="input-container one">
+          <form action="#" class="form">
+            <div class="input-container one">
                     <input class="input-field" type="text" placeholder="17.02.2019" name="usrnm">
                   </div>
-                  <div class="input-container sec">
+            <div class="input-container sec">
                     <i class="icon-calendar"></i>
                     <input class="input-field" type="text" placeholder="17.02.2019" name="email">
                   </div>
-                  <div class="button">
+            <div class="button">
                     <button class="icon-refresh"></button>
                   </div>
-                </form>
-              </div>
+          </form>
+        </div>
         <div class="stat-item-num">
           <div class="f-6">
             <div class="box">
@@ -97,14 +97,14 @@
     </div>
   </div>
   <div class="clear-pos"></div>
-  <div id="ln" class="top-links">
-    <div class="links-elements">
-      <div class="f-12">
-        <h4>Links</h4>
-        <div class="orange-button">
+    <div id="ln" class="top-links">
+      <div class="links-elements">
+        <div class="f-12">
+          <h4>Links</h4>
+          <div class="orange-button">
           <button></button>
         </div>
-        <div class="table-responsive">
+          <div class="table-responsive">
           <div class="f-12">
             <table id="links" class="table-hover">
               <tbody class="table-padding">
@@ -163,21 +163,21 @@
             </table>
           </div>
         </div>
-        <div class="orange-button bottom"><button></button></div>
+          <div class="orange-button bottom"><button></button></div>
         </div>
       </div>
     </div>
-</div>
+  </div>
   <div id="sidebar" class="wrapper menu-left">
     <h3>Just do it</h3>
     <ul id="nav" class="navigation-menu">
-      <li class="nav-item"><a href=""><i class="icon-general"></i>General</a></li>
-      <li class="nav-item"><a href=""><i class="icon-details"></i>Details</a></li>
-      <li class="nav-item"><a href=""><i class="icon-links"></i>Links</a></li>
-      <li class="nav-item"><a href=""><i class="icon-banners"></i>Banners</a></li>
-      <li class="nav-item"><a href=""><i class="icon-personaldata"></i>Personal Deta</a></li>
-      <li class="nav-item"><a href=""><i class="icon-payout"></i>Payout</a></li>
-      <li class="nav-item"><a href=""><i class="icon-postback"></i>Postback</a></li>
+        <li class="nav-item"><a href=""><i class="icon-general"></i>General</a></li>
+        <li class="nav-item"><a href=""><i class="icon-details"></i>Details</a></li>
+        <li class="nav-item"><a href=""><i class="icon-links"></i>Links</a></li>
+        <li class="nav-item"><a href=""><i class="icon-banners"></i>Banners</a></li>
+        <li class="nav-item"><a href=""><i class="icon-personaldata"></i>Personal Deta</a></li>
+        <li class="nav-item"><a href=""><i class="icon-payout"></i>Payout</a></li>
+        <li class="nav-item"><a href=""><i class="icon-postback"></i>Postback</a></li>
     </ul>
     <div class="menager-circle-item">
       <h4>Your Manager</h4>
@@ -190,5 +190,8 @@
   </div>
 </section>
 <script type="text/javascript" src="js/script.js"></script>
+<script id="__bs_script__">//<![CDATA[
+document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.3'><\/script>".replace("HOST", location.hostname));
+//]]></script>
 </body>
 </html>
