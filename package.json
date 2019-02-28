@@ -19,7 +19,7 @@
     "watch:sass": "node-sass --output-style expanded --source-map true -o css sass",
     "watch:autoprefixer": "onchange -d 100 css/style.css -- autoprefixer-cli -o css/style.prefixed.css css/style.css",
     "watch:sassprefixer": "npm-run-all watch:* ",
-    "stylelint": "stylelint '**/*.scss'"
+    "stylelint": "stylelint '**/*.scss'; exit 0"
   },
   "keywords": [],
   "author": "",
@@ -36,11 +36,14 @@
     "npm-run-all": "^4.1.5",
     "nu-html-checker": "^0.1.0",
     "onchange": "^5.2.0",
-    "stylelint": "github:stylelint/stylelint"
+    "stylelint": "github:stylelint/stylelint",
+    "stylelint-config-standard": "^18.2.0"
   },
   "dependencies": {
     "normalize.css": "^8.0.1",
-    "save-dev": "^2.0.0"
+    "save-dev": "^2.0.0",
+    "stylelint-config-sass-guidelines": "^5.3.0",
+    "stylelint-scss": "^3.5.4"
   },
   "repository": {
     "type": "git",
