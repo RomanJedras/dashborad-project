@@ -9,8 +9,9 @@ node_modules
 .sass-cache
 README.md
 package-lock.json
-sass/.sass-cache
 sass
+sass/components
+
 
 
 # Runtime data
