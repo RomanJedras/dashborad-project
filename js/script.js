@@ -36,7 +36,6 @@ function isHover(e) {
 const myDiv = document.getElementById('links');
 const myTr = myDiv.getElementsByTagName('tr');
 
-stlelist = undefined;
 for(let i = 0; i< myTr.length; i++) {
     myTr[i].addEventListener("mousemove", function checkHover() {
         let hovered = isHover(myDiv);
@@ -56,3 +55,12 @@ for(let i = 0; i< myTr.length; i++) {
 
     })
 }
+
+function toggleMenu(visible) {
+    document.querySelector('.menu').classList.toggle('show', visible)
+}
+
+// document.querySelector('.hamburger').addEventListener('click', function(e) {
+//     e.preventDefault();
+//     toggleMenu()
+// });
