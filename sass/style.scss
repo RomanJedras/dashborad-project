@@ -211,7 +211,7 @@ body  {
 }
 
 .form {
-  width: calc(100% - 649px);
+  width: calc(100% - 475px);
   margin: 35px auto 50px;
 
   &::after,
@@ -237,7 +237,7 @@ body  {
     text-align: center;
     height: 38px;
     border-color: transparent;
-    text-indent: -40px;
+    text-indent: -50px;
     max-width: 150px;
   }
 }
@@ -247,24 +247,23 @@ body  {
 }
 
 .one {
-  margin-right: -9px;
   border: 1px solid $brand-top-padding;
   border-right: 0;
+  position: relative;
 
   &:after {
     content: "";
     border-right: 1px solid #333;
-    position: relative;
-    margin-left: -36px;
-    padding: 5px 0;
-    top: 0;
+    padding: 3px 0;
+    margin-left: 0;
   }
 }
 
   .sec {
-  border: 1px solid #dedede;
-  border-left: 0 transparent;
-}
+    @include centerLeft(0,0,relative);
+    border: 1px solid $brand-border-lineTable;
+    border-left: 0 transparent;
+  }
 
  .form div.one, div.sec {
     width: 173px;
@@ -279,10 +278,6 @@ body  {
     border-radius: 5px;
     font-size: 23px;
   }
-
-  .button {
-  margin-left: 97px;
-}
 
   .navigation-menu {
   display: contents;
@@ -362,7 +357,7 @@ body  {
 
       span {
         position: absolute;
-        left: 280px;
+        left: 249px;
         color: $brand-space-color;
       }
     }
@@ -375,7 +370,7 @@ body  {
 
     p {
       &::after {
-        width: 74%;
+        width: 66%;
       }
     }
   }
@@ -549,7 +544,6 @@ body  {
   color: $brand-color-pos;
 }
 
-
   @media(min-width: 767px) {
     @include grid('sm');
   }
@@ -564,4 +558,34 @@ body  {
 
   @media(max-width: 1200px) {
     @include grid('xl');
+
+    .one:after {
+      margin-left: -35px;
+    }
+
+    .button {
+      margin-left: 38px;
+    }
+
+  }
+
+@media(max-width: 1215px) and (min-width: 1201px){
+  .one:after {
+    margin-left: -20px;
+  }
+
+  .button {
+    margin-left: 38px;
+  }
+}
+
+@media(max-width: 1276px) and (min-width: 1216px){
+    .one:after {
+      margin-left: -20px;
+    }
+
+    .button {
+      margin-left: 18px;
+    }
+
   }
