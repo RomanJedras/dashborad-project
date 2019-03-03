@@ -337,7 +337,7 @@ body  {
     @include sizeBox(64px,70px);
     background-size: contain;
     border-radius: 50%;
-    @include centerLeft(-34px,-11px,relative);
+    @include centerLeft(-34px,-13px,relative);
   }
 }
 
