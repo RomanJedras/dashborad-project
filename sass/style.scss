@@ -369,21 +369,20 @@ body  {
   }
 
   .boxOne {
-    margin-left: 52px;
+    margin-left: 22px;
+    top: 1px;
+    position: relative;
 
     p {
       &::after {
-        width: 72%;
+        width: 74%;
       }
     }
   }
 
   .box {
-      width: calc(100% - 2px);
-      margin: 0 auto;
-      position: relative;
-      left: 74px;
-      max-width: 70%;
+    width: calc(100% - 143px);
+    margin: 0 0 0 auto;
 
     p {
       &::after {
