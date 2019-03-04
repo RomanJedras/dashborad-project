@@ -47,6 +47,10 @@ body  {
   padding-right: 15px;
 }
 
+.top {
+  margin-bottom: 40px;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -190,69 +194,60 @@ body  {
   justify-content: center;
   margin-left: auto;
   margin-top: 15px;
+  background-color: $brand-color-white;
 }
 
   .top-bar {
   display: block;
   min-height: 100%;
-  background-color: $brand-color-white;
   z-index: 1;
   width: 100%;
   position: relative;
   margin: 0 auto 3px;
-  padding: 0 15px;
 
     h4 {
       color: $brand-top-bar-hader;
       text-transform: uppercase;
-      padding-top: 5px;
+      padding-top: 15px;
       font-weight: 600;
     }
 }
 
   .form {
-  margin: 35px auto 50px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  border-top: 1px solid $brand-top-padding;
+  border-bottom: 1px solid $brand-top-padding;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 20px 5px;
 
-  &::after,
-  &::before {
-    content: "";
-    border-bottom: 1px solid $brand-top-padding;
-    width: 100%;
-    position: absolute;
-    top: 122px;
-    left: 0;
-    padding-bottom: 50px;
-  }
+    i {
+      top: 14px;
+      right: 20px;
+      position: absolute;
+    }
+}
 
-  &::before {
-    top: 18px;
-  }
-
-  i {
-    @include centerLeft(0,-44px,relative);
-  }
+.input-field {
+  background: transparent;
+  border: none transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
   .input-container {
-    border-radius: 3px;
-    position: relative;
-
-  input[type='text'] {
+    input[type = 'text'] {
     text-align: center;
-    height: 38px;
-    border-color: transparent;
     text-indent: -50px;
     max-width: 150px;
-  }
+    }
 
   .button {
-    margin-left: -16px;
-    margin-top: -5px;
+    margin-top: 0;
 
     button {
       margin-left: 32px;
@@ -268,17 +263,31 @@ body  {
   .border__item {
     border: 1px solid $brand-top-padding;
     border-radius: 3%;
-    border-right: 0;
-
-    &:after {
-      content: "";
-      border-right: 1px solid $brand-top-padding;
-      padding: 3px 0;
-      margin-left: 0;
-    }
+    position: relative;
+    padding: 10px;
   }
 
-  .border__item_sec {
+   .line {
+     &:after {
+       content: "";
+       border-right: 1px solid $brand-top-padding;
+       right: 0;
+       position: absolute;
+       top: 3px;
+       padding: 35px 0 3px;
+     }
+   }
+
+    .border__item.line {
+      border-right: none;
+      position: relative;
+    }
+
+    .border__item.sec {
+      border-left: 0;
+    }
+
+    .border__item_sec {
     border: 1px solid $brand-top-padding;
     border-left: 0;
   }
@@ -289,19 +298,9 @@ body  {
   }
 
   .stat__wrapper {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: calc(100% - 70px);
-    border: 1px solid;
+    display: block;
+    width: calc(100% - 170px);
     margin: 0 auto;
-    height: 132px;
-
-      div {
-      width: calc(100% - 106px);
-      margin: 0 auto;
-    }
   }
 
   .navigation-menu {
@@ -361,15 +360,14 @@ body  {
     }
 }
 
-  .boxOne, .box {
+   .box {
     color: $brand-color-text;
-    flex-basis: 319px;
-    height: 72px;
-
-    p {
-      text-align: left;
+     width: calc(100% - 40px);
+     p {
+      display: flex;
       font-size: 17px;
       position: relative;
+      justify-content: space-between;
 
       &::after {
         border-bottom: 1px solid $brand-top-padding;
@@ -382,15 +380,13 @@ body  {
       }
 
       span {
-        position: absolute;
-        left: 249px;
         color: $brand-space-color;
       }
     }
   }
 
   .charts {
-    width: calc(100% - 284px);
+    width: calc(100% - 174px);
     margin: 29px auto 20px;
 }
 
@@ -410,47 +406,46 @@ body  {
     border-radius: 4px;
   }
 
-  .legend {
-    margin-left: 20px;
-    height: 40px;
+.box-color {
+  display: block;
+  width: calc(100% - 225px);
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 
-  .gl-blue {
-    color: $brand-legend-color;
-    font-size: 32px;
-  }
-
-  .gl-orange,
-  .gl__orange {
-    font-size: 32px;
-    color: $brand-activeLinkLg-color;
-  }
-
-  .earned {
-    margin: 12px auto;
-    @include centerLeft(-3px,34%);
-  }
- }
-
-.gl-blue,
-.gl-orange,
-.gl-green {
-  margin: -7px 9px;
+    p {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    width: calc(100% - 40%);
+    }
 }
 
-.icon-circle-blue {
-  flex: 0 0 141px;
+.glyphicon-one-fine-dot {
+  top: -4px;
 }
 
 .icon-earned-green {
   span {
-     &:first-child {
-       color: $brand-activeCheckbox-color;
-       font-size: 32px;
-       @include centerLeft(0,0);
-       float: right;
-     }
-   }
- }
+    &:first-child {
+      color: $brand-activeCheckbox-color;
+      font-size: 32px;
+    }
+  }
+}
+
+.gl-blue {
+  color: $brand-legend-color;
+  font-size: 32px;
+}
+
+.gl-orange,
+.gl__orange {
+  font-size: 32px;
+  color: $brand-activeLinkLg-color;
+}
 
 .chart__img {
   width: 100%;
@@ -459,13 +454,13 @@ body  {
 
 .scroll-wrapper {
     display: block;
-    width: 100%;
+    width: calc(100% - 1px);
     overflow-x: auto;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
  }
 
   .scroll-wrapper table {
-    width: 680px;
+    width: 100%;
     max-width: 100%;
     margin: 0 auto;
     overflow-x: auto;
@@ -492,10 +487,15 @@ body  {
     }
   }
 
-.icon-ok  span.icon {
-  visibility: visible;
-  position: absolute;
-  left: 633px;
+  .icon-ok  span.icon {
+    visibility: visible;
+  }
+
+  .space {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
   .last td {
@@ -507,11 +507,7 @@ body  {
   }
 
   .top__links div:first-child {
-    background-color: $brand-color-white;
-    width: 97%;
-    padding: 0 15px;
-
-      h4 {
+    h4 {
       font-weight: 200;
       text-transform: uppercase;
       color: $brand-color-text;
