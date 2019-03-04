@@ -211,8 +211,14 @@ body  {
 }
 
 .form {
-  width: calc(100% - 475px);
+  //width: calc(100% - 408px);
   margin: 35px auto 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
 
   &::after,
   &::before {
@@ -230,54 +236,65 @@ body  {
   }
 
   i {
-    @include centerLeft(0,146px,relative);
+    @include centerLeft(0,-44px,relative);
   }
+}
 
-  input[type*= 'text'] {
+.input-container {
+  border-radius: 3px;
+  position: relative;
+
+  input[type = 'text'] {
     text-align: center;
     height: 38px;
     border-color: transparent;
     text-indent: -50px;
     max-width: 150px;
   }
-}
 
-.input-container {
-  border-radius: 3px;
-}
+  .button {
+    margin-left: -16px;
+    margin-top: -5px;
 
-.one {
-  border: 1px solid $brand-top-padding;
-  border-right: 0;
-  position: relative;
+    button {
+      margin-left: 32px;
+      background-color: $brand-activeLinkLg-color;
+      overflow: hidden;
+      border: none;
+      @include sizeContainer(45px,45px);
+      border-radius: 5px;
+      font-size: 23px;
+    }
+  }
 
-  &:after {
-    content: "";
-    border-right: 1px solid #333;
-    padding: 3px 0;
-    margin-left: 0;
+  .border__item {
+    border: 1px solid $brand-top-padding;
+    border-radius: 3%;
+    border-right: 0;
+
+    &:after {
+      content: "";
+      border-right: 1px solid $brand-top-padding;
+      padding: 3px 0;
+      margin-left: 0;
+    }
+  }
+
+  .border__item_sec {
+    border: 1px solid $brand-top-padding;
+    border-left: 0;
   }
 }
 
-  .sec {
-    @include centerLeft(0,0,relative);
-    border: 1px solid $brand-border-lineTable;
-    border-left: 0 transparent;
-  }
-
- .form div.one, div.sec {
+.form div.one, div.sec {
     width: 173px;
   }
 
-  .button button {
-    margin-left: 32px;
-    background-color: $brand-activeLinkLg-color;
-    overflow: hidden;
-    border: none;
-    @include sizeContainer(45px,45px);
-    border-radius: 5px;
-    font-size: 23px;
-  }
+.stat {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
 
   .navigation-menu {
   display: contents;
@@ -542,6 +559,13 @@ body  {
   margin-left: 26%;
   white-space: nowrap;
   color: $brand-color-pos;
+}
+
+.gl__green {
+  color: $brand-activeCheckbox-color;;
+  top: -34px;
+  position: relative;
+  left: 28px;
 }
 
   @media(min-width: 767px) {
