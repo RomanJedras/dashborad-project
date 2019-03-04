@@ -983,9 +983,13 @@ body {
   font-size: 32px;
 }
 
-.gl-orange,
-.gl__orange {
+.gl-orange {
+  color: #F58220;
   font-size: 32px;
+}
+
+.gl__orange {
+  font-size: 22px;
   color: #F58220;
 }
 

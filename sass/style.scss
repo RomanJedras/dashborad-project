@@ -441,9 +441,13 @@ body  {
   font-size: 32px;
 }
 
-.gl-orange,
-.gl__orange {
+.gl-orange {
+  color: $brand-activeLinkLg-color;
   font-size: 32px;
+}
+
+.gl__orange {
+  font-size: 22px;
   color: $brand-activeLinkLg-color;
 }
 
