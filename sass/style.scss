@@ -169,18 +169,18 @@ body  {
   }
  }
 
-.icon-notification,
-.icon__quit {
-  font-size: 23px;
-}
+  .icon-notification,
+  .icon__quit {
+    font-size: 23px;
+  }
 
-.icon-arrow-down-small {
+  .icon-arrow-down-small {
   left: 132px;
   position: absolute;
 }
 
-.site-wrapper,
-.top__links {
+  .site-wrapper,
+  .top__links {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
@@ -192,7 +192,7 @@ body  {
   margin-top: 15px;
 }
 
-.top-bar {
+  .top-bar {
   display: block;
   min-height: 100%;
   background-color: $brand-color-white;
@@ -210,15 +210,13 @@ body  {
     }
 }
 
-.form {
-  //width: calc(100% - 408px);
+  .form {
   margin: 35px auto 50px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-
 
   &::after,
   &::before {
@@ -240,11 +238,11 @@ body  {
   }
 }
 
-.input-container {
-  border-radius: 3px;
-  position: relative;
+  .input-container {
+    border-radius: 3px;
+    position: relative;
 
-  input[type = 'text'] {
+  input[type='text'] {
     text-align: center;
     height: 38px;
     border-color: transparent;
@@ -286,15 +284,25 @@ body  {
   }
 }
 
-.form div.one, div.sec {
+  .form div.one, div.sec {
     width: 173px;
   }
 
-.stat {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
+  .stat__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: calc(100% - 70px);
+    border: 1px solid;
+    margin: 0 auto;
+    height: 132px;
+
+      div {
+      width: calc(100% - 106px);
+      margin: 0 auto;
+    }
+  }
 
   .navigation-menu {
   display: contents;
@@ -335,22 +343,22 @@ body  {
 }
 
   .manager-container-elem {
-  border: 1px solid $brand-gray-color;
-  border-radius: 50%;
-  padding: 10%;
-  position: relative;
-  @include sizeContainer(87px,87px);
-  margin: 0 32px;
-  display: inline-block;
-  left: -24px;
-
-  i {
-    background: url("https://randomuser.me/api/portraits/men/46.jpg") no-repeat center;
-    @include sizeBox(64px,70px);
-    background-size: contain;
+    border: 1px solid $brand-gray-color;
     border-radius: 50%;
-    @include centerLeft(-34px,-13px,relative);
-  }
+    padding: 10%;
+    position: relative;
+    @include sizeContainer(87px,87px);
+    margin: 0 32px;
+    display: inline-block;
+    left: -24px;
+
+      i {
+        background: url("https://randomuser.me/api/portraits/men/46.jpg") no-repeat center;
+        @include sizeBox(64px,70px);
+        background-size: contain;
+        border-radius: 50%;
+        @include centerLeft(-34px,-13px,relative);
+    }
 }
 
   .boxOne, .box {
@@ -370,6 +378,7 @@ body  {
         content: "";
         top: 21px;
         left: 0;
+        width: 100%;
       }
 
       span {
@@ -379,29 +388,6 @@ body  {
       }
     }
   }
-
-  .boxOne {
-    margin-left: 22px;
-    top: 1px;
-    position: relative;
-
-    p {
-      &::after {
-        width: 66%;
-      }
-    }
-  }
-
-  .box {
-    width: calc(100% - 143px);
-    margin: 0 0 0 auto;
-
-    p {
-      &::after {
-        width: 92%;
-      }
-    }
-   }
 
   .charts {
     width: calc(100% - 284px);
@@ -414,8 +400,8 @@ body  {
   }
 
   .top-bar div.container:nth-child(5) {
-  width: calc(100% - 522px);
-  margin-bottom: 74px;
+    width: calc(100% - 522px);
+    margin-bottom: 74px;
 }
 
   .icon-circle-blue,
@@ -562,7 +548,7 @@ body  {
 }
 
 .gl__green {
-  color: $brand-activeCheckbox-color;;
+  color: $brand-activeCheckbox-color;
   top: -34px;
   position: relative;
   left: 28px;
@@ -582,34 +568,4 @@ body  {
 
   @media(max-width: 1200px) {
     @include grid('xl');
-
-    .one:after {
-      margin-left: -35px;
-    }
-
-    .button {
-      margin-left: 38px;
-    }
-
-  }
-
-@media(max-width: 1215px) and (min-width: 1201px){
-  .one:after {
-    margin-left: -20px;
-  }
-
-  .button {
-    margin-left: 38px;
-  }
-}
-
-@media(max-width: 1276px) and (min-width: 1216px){
-    .one:after {
-      margin-left: -20px;
-    }
-
-    .button {
-      margin-left: 18px;
-    }
-
   }

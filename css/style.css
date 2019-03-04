@@ -835,10 +835,20 @@ body {
   width: 173px;
 }
 
-.stat {
+.stat__wrapper {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   flex-direction: row;
+  width: calc(100% - 70px);
+  border: 1px solid;
+  margin: 0 auto;
+  height: 132px;
+}
+
+.stat__wrapper div {
+  width: calc(100% - 106px);
+  margin: 0 auto;
 }
 
 .navigation-menu {
@@ -920,31 +930,13 @@ body {
   content: "";
   top: 21px;
   left: 0;
+  width: 100%;
 }
 
 .boxOne p span, .box p span {
   position: absolute;
   left: 249px;
   color: #696969;
-}
-
-.boxOne {
-  margin-left: 22px;
-  top: 1px;
-  position: relative;
-}
-
-.boxOne p::after {
-  width: 66%;
-}
-
-.box {
-  width: calc(100% - 143px);
-  margin: 0 0 0 auto;
-}
-
-.box p::after {
-  width: 92%;
 }
 
 .charts {
@@ -1315,30 +1307,6 @@ body {
   .col-xl-12 {
     flex: 0 0 100%;
     max-width: 100%;
-  }
-  .one:after {
-    margin-left: -35px;
-  }
-  .button {
-    margin-left: 38px;
-  }
-}
-
-@media (max-width: 1215px) and (min-width: 1201px) {
-  .one:after {
-    margin-left: -20px;
-  }
-  .button {
-    margin-left: 38px;
-  }
-}
-
-@media (max-width: 1276px) and (min-width: 1216px) {
-  .one:after {
-    margin-left: -20px;
-  }
-  .button {
-    margin-left: 18px;
   }
 }
 
