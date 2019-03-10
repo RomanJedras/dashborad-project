@@ -179,8 +179,8 @@ body  {
   }
 
   .icon-arrow-down-small {
-  left: 132px;
-  position: absolute;
+    left: 22px;
+    position: relative;
 }
 
   .site-wrapper,
@@ -329,14 +329,13 @@ body  {
 }
 
   .menager-circle-item {
-  border-top: 1px solid $brand-gray-color;
-  margin-top: 20px;
+    border-top: 1px solid $brand-gray-color;
+    margin-top: 20px;
 
   h4 {
     text-transform: uppercase;
     text-align: center;
     color: $brand-linka-color;
-    left: -27px;
     position: relative;
   }
 }
@@ -348,21 +347,20 @@ body  {
     position: relative;
     @include sizeContainer(87px,87px);
     margin: 0 32px;
-    display: inline-block;
-    left: -24px;
 
       i {
         background: url("https://randomuser.me/api/portraits/men/46.jpg") no-repeat center;
-        @include sizeBox(64px,70px);
+        @include sizeBox(74px,70px);
         background-size: contain;
         border-radius: 50%;
-        @include centerLeft(-34px,-13px,relative);
+        @include centerLeft(6px,4px,absolute,false);
     }
 }
 
    .box {
     color: $brand-color-text;
      width: calc(100% - 40px);
+
      p {
       display: flex;
       font-size: 17px;
@@ -458,7 +456,7 @@ body  {
 
 .scroll-wrapper {
     display: block;
-    width: calc(100% - 1px);
+    width: calc(100% - 211px);
     overflow-x: auto;
     margin: 0 auto 30px;
  }
@@ -554,13 +552,146 @@ body  {
   left: 28px;
 }
 
-  @media(min-width: 767px) {
+
+
+  @media(max-width: 992px) {
+  .box-color {
+    width: 100%;
+  }
+
+  .table-padding td {
+    font-size: 15px;
+  }
+}
+
+  @media(max-width: 767px) {
     @include grid('sm');
+
+    .input-container .border__item.sec {
+      border-left: 1px solid $brand-top-padding;
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .input-container .button {
+      margin: 0 auto;
+      width: calc(100% - 310px);
+    }
+
+    .box-color div {
+      margin-top: 10px;
+    }
+
+    .gl-orange {
+      margin: 0 -14px;
+    }
+
+    div#sidebar {
+      display: none;
+    }
+
+    .menu-left {
+      opacity: 0;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+
+    .menu-open {
+      opacity: 1;
+    }
+
+    .site-wrapper, .top__links {
+      width: 100%;
+    }
+
+    .width, .link-nav {
+      width: calc(100% - 250px);
+    }
+
+    header {
+      width: 100%;
+      padding: 0 15px;
+    }
+
+    .show {
+      width: calc(100% - 250px);
+      padding: 0 15px;
+      margin-left: auto;
+    }
+
+    .nav-horizont {
+      flex-direction: column;
+
+      div {
+        justify-content: center;
+      }
+    }
+
+    .components__well,
+    .components__bell,
+    .components__login {
+      flex: 0 0 50px;
+      border: 1px solid $brand-bk-g-c;
+      width: 100%;
+    }
+
+    .font td {
+      font-size: 80%;
+    }
+  }
+
+  @media(max-width: 646px) {
+    .input-container .button {
+    width: calc(100% - 63%);
+  }
+
+    .charts {
+      width: calc(100% - 50%);
+    }
+
+    .font td {
+      font-size: 9px;
+    }
+  }
+
+  @media(max-width: 605px) {
+    .stat__wrapper p {
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .font td {
+      font-size: 6px;
+    }
+
+    .charts {
+      width: calc(100% - 30%);
+    }
+
+  }
+
+  @media(max-width: 872px) {
+    .stat__wrapper {
+      width: 100%;
+    }
+
+    .scroll-wrapper {
+      width: 100%;
+    }
+
+    .box-color p {
+      height: 100%;
+    }
+
   }
 
   @media(min-width: 768px) {
     @include grid('md');
-  }
+}
+
+
 
   @media(min-width: 992px) {
     @include grid('lg');

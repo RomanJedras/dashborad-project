@@ -15,11 +15,13 @@
     "build:sass": "node-sass --output-style compact -o css sass",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
-    "watch": "npm-run-all build -p watch:*",
+    "watch": "npm-run-all build:sass  build:autoprefixer -p watch:*",
     "watch:sass": "node-sass --output-style expanded --source-map true -o css sass",
     "watch:autoprefixer": "onchange -d 100 css/style.css -- autoprefixer-cli -o css/style.prefixed.css css/style.css",
     "watch:sassprefixer": "npm-run-all watch:* ",
-    "stylelint": "stylelint '**/*.scss'"
+    "stylelint": "stylelint '**/*.scss'",
+    "browsersync": "browser-sync start --server --files css/*.css *.html",
+    "scss": "node-sass  --output-style compact  -watch  -o css sass"
   },
   "keywords": [],
   "author": "",

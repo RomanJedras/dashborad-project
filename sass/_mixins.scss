@@ -32,9 +32,15 @@
   transform: translateY($tra);
 }
 
-@mixin centerLeft($t:0,$tl:0,$pos:absolute) {
+@mixin centerLeft($t:0,$tl:0,$pos:absolute,$d:true) {
   top: $t;
-  left: $tl;
+
+  @if ($d) {
+    left: $tl;
+  } @else {
+    right : $tl;
+  }
+
   position: $pos;
 }
 

@@ -52,15 +52,15 @@ for(let i = 0; i< myTr.length; i++) {
         if (! hovered) {
             this.classList.remove('icon-ok');
         }
-
     })
 }
 
 function toggleMenu(visible) {
-    document.querySelector('.menu').classList.toggle('show', visible)
+    document.querySelector('header').classList.toggle('show', visible);
+    document.querySelector('table').classList.toggle('font', visible)
 }
 
-// document.querySelector('.hamburger').addEventListener('click', function(e) {
-//     e.preventDefault();
-//     toggleMenu()
-// });
+document.querySelector('#nav-icon1').addEventListener('click', function(e) {
+    e.preventDefault();
+    toggleMenu()
+});

@@ -12,7 +12,7 @@ package-lock.json
 .stylelintrc
 .stylelintrc.json
 sass/stylelint.config.js
-
+.jshintrc
 
 
 # Runtime data
