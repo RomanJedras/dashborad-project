@@ -57,7 +57,8 @@ for(let i = 0; i< myTr.length; i++) {
 
 function toggleMenu(visible) {
     document.querySelector('header').classList.toggle('show', visible);
-    document.querySelector('table').classList.toggle('font', visible)
+    document.querySelector('table').classList.toggle('font', visible);
+    document.querySelector('#nav-icon1').classList.remove('hamburger-left"', visible);
 }
 
 document.querySelector('#nav-icon1').addEventListener('click', function(e) {
