@@ -649,15 +649,11 @@ body  {
     }
 
     .hamburger {
+      display: block;
       &.open {
         left: 120px;
       }
     }
-
-    .hamburger {
-      display: block;
-    }
-
   }
 
   @media(max-width: 646px) {
