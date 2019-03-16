@@ -361,6 +361,8 @@
 
 /* line 584, sass/style.scss */ .baner.show { dipslay: block; }
 
+/* line 589, sass/style.scss */ .baner .icon-links:before { color: #DE5252; }
+
 @media (max-width: 992px) { /* line 597, sass/style.scss */ .box-color { width: 100%; }
   /* line 601, sass/style.scss */ .table-padding td { font-size: 15px; } }
 

@@ -571,9 +571,9 @@ body  {
   display: none;
  }
 
+
+
 .baner {
-
-
   .banners {
     td {
       font-size: 15px;
@@ -585,12 +585,12 @@ body  {
     dipslay: block;
   }
 
+  .icon-links {
+      &:before {
+        color: $brand-negativePosA;
+      }
+  }
 }
-
-
-
-
-
 
 
   @media(max-width: 992px) {
