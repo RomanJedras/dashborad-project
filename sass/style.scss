@@ -650,6 +650,7 @@ body  {
 
     .hamburger {
       display: block;
+
       &.open {
         left: 120px;
       }
@@ -714,8 +715,12 @@ body  {
       color: $brand-color-white;
     }
 
-    .container-fluid {
-      opacity: 0;
+    .site-wrapper, .top__links {
+     display: none;
+    }
+
+    .top {
+      display: none;
     }
 
     .navigation-menu {
@@ -750,6 +755,18 @@ body  {
       left: 18px;
     }
   }
+
+  @media(max-width:325px) {
+    .navigation-menu {
+      width: calc(100% - 20%);
+    }
+
+    .name {
+      font-size: 12px;
+    }
+
+  }
+
 
   @media(max-width: 872px) {
     .stat__wrapper {

@@ -1,3 +1,10 @@
+/*jshint esversion: 6 */
+/*global window */
+/* jshint browser: true */
+/* jshint node: true */
+/* jshint maxlen: 550 */
+/* jshint ignore:start */
+
 
 
 const navIcon = document.getElementById('nav-icon1'),
@@ -13,7 +20,7 @@ navIcon.addEventListener('click',function () {
     linkItem.classList.toggle('link-nav');
 
 
-});
+})
 
 
 const ulList = document.getElementById("nav"),
@@ -65,3 +72,5 @@ document.querySelector('#nav-icon1').addEventListener('click', function(e) {
     e.preventDefault();
     toggleMenu()
 });
+
+/*jshint ignore:end*/
