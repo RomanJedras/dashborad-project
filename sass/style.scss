@@ -507,7 +507,13 @@ body  {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-}
+
+    a {
+      text-decoration: none;
+      color: $brand-banner-link;
+      font-size: 13px;
+    }
+  }
 
   .last td {
     border-bottom: 1px solid $brand-border-lineTable;
@@ -561,15 +567,41 @@ body  {
   z-index: 1;
  }
 
+.hidden {
+  display: none;
+ }
+
+.baner {
+
+
+  .banners {
+    td {
+      font-size: 15px;
+      white-space: nowrap;
+    }
+  }
+
+  &.show {
+    dipslay: block;
+  }
+
+}
+
+
+
+
+
+
+
   @media(max-width: 992px) {
     .box-color {
       width: 100%;
     }
 
-  .table-padding td {
-    font-size: 15px;
+    .table-padding td {
+      font-size: 15px;
+    }
   }
-}
 
   @media(max-width: 767px) {
     @include grid('sm');
@@ -659,8 +691,8 @@ body  {
 
   @media(max-width: 646px) {
     .input-container .button {
-    width: calc(100% - 63%);
-  }
+      width: calc(100% - 63%);
+    }
 
     .charts {
       width: calc(100% - 50%);
@@ -693,13 +725,13 @@ body  {
       opacity: 1;
       display: block;
 
-        h2 {
-          text-align: center;
-        }
+      h2 {
+        text-align: center;
+      }
     }
 
     .hamburger {
-        opacity: 0;
+      opacity: 0;
     }
 
     header {
@@ -716,7 +748,7 @@ body  {
     }
 
     .site-wrapper, .top__links {
-     display: none;
+      display: none;
     }
 
     .top {
@@ -740,9 +772,9 @@ body  {
       justify-content: flex-start;
       margin: 0 auto;
 
-        i {
-          @include sizeBox(83%,83%);
-        }
+      i {
+        @include sizeBox(83%,83%);
+      }
     }
 
     .menager-circle-item {
@@ -764,9 +796,7 @@ body  {
     .name {
       font-size: 12px;
     }
-
   }
-
 
   @media(max-width: 872px) {
     .stat__wrapper {
@@ -784,7 +814,7 @@ body  {
 
   @media(min-width: 768px) {
     @include grid('md');
-}
+  }
 
   @media(min-width: 992px) {
     @include grid('lg');
@@ -793,3 +823,4 @@ body  {
   @media(max-width: 1200px) {
     @include grid('xl');
   }
+

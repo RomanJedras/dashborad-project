@@ -23,11 +23,38 @@ navIcon.addEventListener('click',function () {
 })
 
 
+
+
+
 const ulList = document.getElementById("nav"),
          list = ulList.getElementsByClassName("nav-item");
-for (let i = 0; i < list.length; i++) {
+const links = document.getElementById('stw');
+const ln = document.getElementById('ln');
+const banners = document.getElementById('ban');
+
+
+
+
+for (let i = 0; i < ulList.childElementCount; i++) {
     list[i].addEventListener("click", function(event) {
         event.preventDefault();
+
+        if (this.textContent === 'General' ) {
+            links.classList.remove('hidden');
+            banners.classList.add('hidden');
+            ln.classList.add('hidden');
+        }else if (this.textContent === 'Links') {
+            links.classList.add('hidden');
+            ln.classList.remove('hidden');
+            banners.classList.remove('show')
+        } else if (this.textContent === 'Banners') {
+            banners.classList.remove('hidden');
+            ln.classList.add('hidden');
+            banners.classList.add('show');
+        } else {
+           links.classList.remove('hidden');
+        }
+
         let current = document.getElementsByClassName("active");
         if (current.length > 0) {
             current[0].className = current[0].className.replace(" active", "");
@@ -41,26 +68,38 @@ function isHover(e) {
 }
 
 const myDiv = document.getElementById('links');
-const myTr = myDiv.getElementsByTagName('tr');
+    let myTr = myDiv.getElementsByTagName('tr');
+const myBanner = document.getElementById('banner');
+    let myCol = myBanner.getElementsByTagName('tr');
 
-for(let i = 0; i< myTr.length; i++) {
-    myTr[i].addEventListener("mousemove", function checkHover() {
-        let hovered = isHover(myDiv);
-        let current = document.getElementsByClassName("icon-ok");
-        if (hovered && current.length > 0) {
-            current[0].className = current[0].className.replace(" icon-ok", "");
-        }
-        this.className += " icon-ok";
-    })
+getHover(myDiv, myTr);
 
-    myTr[i].addEventListener("mouseleave", function checkHover() {
-        let hovered = isHover(myDiv);
+getHover(myBanner,myCol);
 
-        if (! hovered) {
-            this.classList.remove('icon-ok');
-        }
-    })
+
+
+
+function getHover(mainItem, mainCol) {
+    for(let i = 0; i< mainCol.length; i++) {
+        mainCol[i].addEventListener("mousemove", function checkHover() {
+            let hovered = isHover(mainItem);
+            let current = document.getElementsByClassName("icon-ok");
+            if (hovered && current.length > 0) {
+                current[0].className = current[0].className.replace(" icon-ok", "");
+            }
+            this.className += " icon-ok";
+        })
+
+        mainCol[i].addEventListener("mouseleave", function checkHover() {
+            let hovered = isHover(mainItem);
+
+            if (! hovered) {
+                this.classList.remove('icon-ok');
+            }
+        })
+    }
 }
+
 
 function toggleMenu(visible) {
     document.querySelector('header').classList.toggle('show', visible);
