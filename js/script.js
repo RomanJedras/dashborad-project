@@ -43,7 +43,7 @@ for (let i = 0; i < ulList.childElementCount; i++) {
             links.classList.remove('hidden');
             banners.classList.add('hidden');
             ln.classList.add('hidden');
-        }else if (this.textContent === 'Links') {
+        } else if (this.textContent === 'Links') {
             links.classList.add('hidden');
             ln.classList.remove('hidden');
             banners.classList.remove('show')
