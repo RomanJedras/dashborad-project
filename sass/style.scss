@@ -247,6 +247,14 @@ body  {
   }
 }
 
+.btn-primary {
+  color: $brand-color-white;
+  background-color: $brand-activeLinkLg-color;
+  border-color: $brand-activeLinkLg-color;
+  width: 97px;
+  padding: 13px 0;
+}
+
 .line-form {
   display: block;
 
@@ -306,13 +314,7 @@ body  {
    margin-bottom: 75px;
 }
 
-  .btn-primary {
-  color: $brand-color-white;
-  background-color: $brand-activeLinkLg-color;
-  border-color: $brand-activeLinkLg-color;
-}
-
-  .input-field {
+.input-field {
     background: transparent;
     border: none transparent;
     -webkit-appearance: none;

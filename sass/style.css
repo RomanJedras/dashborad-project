@@ -686,6 +686,13 @@ header {
 .lst.form-group {
   margin-bottom: 54px; }
 
+.btn-primary {
+  color: #FFFFFF;
+  background-color: #F58220;
+  border-color: #F58220;
+  width: 97px;
+  padding: 13px 0; }
+
 .line-form {
   display: block; }
   .line-form::after {
@@ -734,11 +741,6 @@ header {
 
 .lst-end.form-group {
   margin-bottom: 75px; }
-
-.btn-primary {
-  color: #FFFFFF;
-  background-color: #F58220;
-  border-color: #F58220; }
 
 .input-field {
   background: transparent;

@@ -15,7 +15,6 @@ sass/stylelint.config.js
 .jshintrc
 .eslintrc
 .prettierrc
-sass/.sass-cache
 
 
 # Runtime data
