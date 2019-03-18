@@ -22,17 +22,12 @@ navIcon.addEventListener('click',function () {
 
 })
 
-
-
-
-
 const ulList = document.getElementById("nav"),
          list = ulList.getElementsByClassName("nav-item");
 const links = document.getElementById('stw');
 const ln = document.getElementById('ln');
 const banners = document.getElementById('ban');
-
-
+const personalData = document.getElementById('detal-per');
 
 
 for (let i = 0; i < ulList.childElementCount; i++) {
@@ -43,14 +38,23 @@ for (let i = 0; i < ulList.childElementCount; i++) {
             links.classList.remove('hidden');
             banners.classList.add('hidden');
             ln.classList.add('hidden');
+            personalData.classList.add('hidden');
         } else if (this.textContent === 'Links') {
             links.classList.add('hidden');
             ln.classList.remove('hidden');
-            banners.classList.remove('show')
+            banners.classList.remove('show');
+            personalData.classList.add('hidden');
         } else if (this.textContent === 'Banners') {
             banners.classList.remove('hidden');
             ln.classList.add('hidden');
             banners.classList.add('show');
+            personalData.classList.add('hidden');
+        } else if (this.textContent === 'Personal Deta') {
+            ln.classList.add('hidden');
+            links.classList.add('hidden');
+            banners.classList.remove('show');
+            banners.classList.add('hidden');
+            personalData.classList.remove('hidden');
         } else {
            links.classList.remove('hidden');
         }

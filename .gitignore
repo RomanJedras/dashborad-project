@@ -13,6 +13,9 @@ package-lock.json
 .stylelintrc.json
 sass/stylelint.config.js
 .jshintrc
+.eslintrc
+.prettierrc
+sass/.sass-cache
 
 
 # Runtime data
@@ -96,3 +99,4 @@ typings/
 *.iml
 out
 gen
+vendor/

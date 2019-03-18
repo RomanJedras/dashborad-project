@@ -241,7 +241,78 @@ body  {
     }
 }
 
-.input-field {
+.lst {
+  &.form-group {
+    margin-bottom: 54px;
+  }
+}
+
+.line-form {
+  display: block;
+
+  &::after {
+    content: "";
+    border-bottom: 1px solid $color-g-color;
+    left: 0;
+    position: absolute;
+    width: calc(100% - 3px);
+    margin: -21px auto;
+  }
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    -webkit-appearance: none;
+
+    label {
+     flex: 0 0 25%;
+     color: $brand-color-label;
+    }
+
+    input {
+      width: 313px;
+      height: 39px;
+      text-indent: 15px;
+      border: 1px solid $color-g-color;
+      border-radius: 8px;
+
+      @include placeholder {
+        color: $brand-gray-color;
+      }
+    }
+  }
+
+.detals {
+  h4 {
+    margin-bottom: 40px;
+
+    &::after {
+      content: "";
+      border-bottom: 1px solid $color-g-color;
+      left: 0;
+      position: absolute;
+      top: 52px;
+      width: 100%;
+    }
+  }
+}
+
+  .lst-end.form-group {
+   margin-bottom: 75px;
+}
+
+  .btn-primary {
+  color: $brand-color-white;
+  background-color: $brand-activeLinkLg-color;
+  border-color: $brand-activeLinkLg-color;
+}
+
+  .input-field {
     background: transparent;
     border: none transparent;
     -webkit-appearance: none;
@@ -269,7 +340,7 @@ body  {
     }
   }
 
-  .border__item {
+    .border__item {
       border: 1px solid $brand-top-padding;
       border-radius: 3%;
       position: relative;
@@ -349,60 +420,60 @@ body  {
   }
 }
 
-  .manager-container-elem {
-    border: 1px solid $brand-gray-color;
-    border-radius: 50%;
-    padding: 10%;
-    position: relative;
-    @include sizeContainer(87px,87px);
-    margin: 0 32px;
+.manager-container-elem {
+  border: 1px solid $brand-gray-color;
+  border-radius: 50%;
+  padding: 10%;
+  position: relative;
+  @include sizeContainer(87px,87px);
+  margin: 0 32px;
 
-      i {
-        background: url("https://randomuser.me/api/portraits/men/46.jpg") no-repeat center;
-        @include sizeBox(70px,70px);
-        background-size: contain;
-        border-radius: 50%;
-        @include centerLeft(7px,7px,absolute,false);
+   i {
+     background: url("https://randomuser.me/api/portraits/men/46.jpg") no-repeat center;
+     @include sizeBox(70px,70px);
+     background-size: contain;
+     border-radius: 50%;
+     @include centerLeft(7px,7px,absolute,false);
     }
 }
 
-   .box {
-    color: $brand-color-text;
-     width: calc(100% - 40px);
+.box {
+  color: $brand-color-text;
+  width: calc(100% - 40px);
 
-     p {
-      display: flex;
-      font-size: 17px;
-      position: relative;
-      justify-content: space-between;
+  p {
+    display: flex;
+    font-size: 17px;
+    position: relative;
+    justify-content: space-between;
 
-      &::after {
-        border-bottom: 1px solid $brand-top-padding;
-        padding-bottom: 4px;
-        position: absolute;
-        content: "";
-        top: 21px;
-        left: 0;
-        width: 100%;
-      }
+    &::after {
+      border-bottom: 1px solid $brand-top-padding;
+      padding-bottom: 4px;
+      position: absolute;
+      content: "";
+      top: 21px;
+      left: 0;
+      width: 100%;
+    }
 
-      span {
-        color: $brand-space-color;
-      }
+    span {
+      color: $brand-space-color;
     }
   }
+}
 
-  .charts {
+.charts {
     width: calc(100% - 174px);
     margin: 29px auto 20px;
 }
 
-  .icon-earned-green,
+.icon-earned-green,
   .icon-circle-orange {
     position: relative;
   }
 
-  .top-bar div.container:nth-child(5) {
+.top-bar div.container:nth-child(5) {
     width: calc(100% - 522px);
     margin-bottom: 74px;
 }
@@ -428,11 +499,11 @@ body  {
     margin: 0 auto;
     width: calc(100% - 40%);
     }
-}
+  }
 
 .glyphicon-one-fine-dot {
   top: -4px;
-}
+  }
 
 .icon-earned-green {
   span {
@@ -446,12 +517,12 @@ body  {
 .gl-blue {
   color: $brand-legend-color;
   font-size: 32px;
-}
+  }
 
 .gl-orange {
   color: $brand-activeLinkLg-color;
   font-size: 32px;
-}
+  }
 
 .gl__orange {
   font-size: 22px;
@@ -543,7 +614,7 @@ body  {
     background-color: $brand-activeLinkLg-color;
     border-radius: 7px;
     border-left: none;
-    bordr-right: none;
+    border-right: none;
 
     &:before {
       content: "+ add new";
@@ -571,8 +642,6 @@ body  {
   display: none;
  }
 
-
-
 .baner {
   .banners {
     td {
@@ -582,7 +651,7 @@ body  {
   }
 
   &.show {
-    dipslay: block;
+    display: block;
   }
 
   .icon-links {
@@ -591,7 +660,6 @@ body  {
       }
   }
 }
-
 
   @media(max-width: 992px) {
     .box-color {
@@ -823,4 +891,3 @@ body  {
   @media(max-width: 1200px) {
     @include grid('xl');
   }
-
