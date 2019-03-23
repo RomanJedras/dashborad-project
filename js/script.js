@@ -24,6 +24,14 @@ var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {
     // 1
     type: 'bar',
+    options: {
+        legend: {
+            display: false
+        },
+        tooltips: {
+            enabled: false
+        }
+    },
     data: {
         // 2
         labels: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"],
