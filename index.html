@@ -11,17 +11,17 @@
   <h2>Just do it</h2>
   <ul id="nav" class="navigation-menu">
     <li class="nav-item"><a href="#"><i class="icon-general"></i>General</a></li>
-    <li class="nav-item"><a href=""><i class="icon-details"></i>Details</a></li>
-    <li class="nav-item"><a href=""><i class="icon-links"></i>Links</a></li>
-    <li class="nav-item"><a href=""><i class="icon-banners"></i>Banners</a></li>
-    <li class="nav-item"><a href=""><i class="icon-personaldata"></i>Personal Deta</a></li>
-    <li class="nav-item"><a href=""><i class="icon-payout"></i>Payout</a></li>
-    <li class="nav-item"><a href=""><i class="icon-postback"></i>Postback</a></li>
+    <li class="nav-item"><a href="#"><i class="icon-details"></i>Details</a></li>
+    <li class="nav-item"><a href="#"><i class="icon-links"></i>Links</a></li>
+    <li class="nav-item"><a href="#"><i class="icon-banners"></i>Banners</a></li>
+    <li class="nav-item"><a href="#"><i class="icon-personaldata"></i>Personal Deta</a></li>
+    <li class="nav-item"><a href="#"><i class="icon-payout"></i>Payout</a></li>
+    <li class="nav-item"><a href="#"><i class="icon-postback"></i>Postback</a></li>
   </ul>
   <div class="menager-circle-item">
     <h4>Your Manager</h4>
     <div class="manager-container-elem">
-      <p class="name">Mikhael E. </p>
+      <p class="name"><a id="modal" href="#">Mikhael E. </a></p>
       <span class="glyphicon gl__green  glyphicon-one-fine-dot"></span>
       <i class="manager-icons"></i>
     </div>
@@ -322,6 +322,47 @@
 
     </div>
   </section>
+  <div class="overlay" id="overlay">
+    <div class="modal" id="myModal">
+      <h4>ONLINE CHAT WITH YOUR personal manager</h4>
+      <div class="btn-close js--close-modal">x</div>
+      <div class="item_photo">
+        <p class="modal-manager manager-container-elem">
+          <span class="img_manager"><i class="online"></i>Michael E.</span>
+          <span class="ac"><i>online</i></span>
+        </p>
+      </div>
+      <section class="messages_elem">
+       <div class="row">
+         <div class="col-sm-12 col-md-6">
+           <div class="item_messages">
+             <span class="item_messages_arrow"></span>
+             <p class="first_msg">Hello. Can I help you?</p>
+           </div>
+           <div class="item_user_messages">
+             <span class="item_messages_arrow"></span>
+             <p class="first_msg">Hello ! I would like to know about Postback </p>
+           </div>
+           <div class="item_messages item">
+             <span class="item_messages_arrow"></span>
+             <p class="first_msg">Ok. 5 min.</p>
+           </div>
+         </div>
+       </div>
+     </section>
+      <section class="messages_form">
+       <div class="col-md-12">
+         <form class="form-messages" method="post">
+          <span class="form-border">
+           <i class="icon-message pos"></i>
+           <input type="text" placeholder="Enter the messages">
+          </span>
+           <button class="js--close-modal btn btn-success">Send</button>
+         </form>
+       </div>
+     </section>
+    </div>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
