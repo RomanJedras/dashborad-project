@@ -806,7 +806,7 @@ header {
     right: 0;
     top: 45px;
     border-left: 11px solid transparent;
-    border-top: 12px solid #BABABA;
+    border-top: 12px solid $brand-triangle-down;
     border-right: none;
     border-bottom: none;
     left: 93%;
@@ -910,7 +910,7 @@ header {
  }
 
 .item_user_messages {
-  background-color: #BABABA;
+  background-color: $brand-triangle-down;
   padding: 3px 5px;
   color: $brand-color-white;
   margin-top: 20px;
@@ -1285,7 +1285,6 @@ header {
         bottom: 127px;
       }
     }
-
   }
 
   @media(max-width:326px) {

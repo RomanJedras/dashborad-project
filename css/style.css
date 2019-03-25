@@ -558,16 +558,16 @@
   /* line 1277, sass/style.scss */ .form-messages .btn.btn-success { width: 40%; margin-top: 20px; }
   /* line 1284, sass/style.scss */ .messages_elem:after { bottom: 127px; } }
 
-@media (max-width: 326px) { /* line 1292, sass/style.scss */ .navigation-menu { width: calc(100% - 20%); }
-  /* line 1296, sass/style.scss */ .item_messages { max-width: 100%; }
-  /* line 1300, sass/style.scss */ .name { font-size: 12px; }
-  /* line 1304, sass/style.scss */ .item_user_messages { max-width: 100%; }
-  /* line 1308, sass/style.scss */ .item { width: 47%; }
-  /* line 1312, sass/style.scss */ .item_user_messages span { right: 0; top: 70px; } }
+@media (max-width: 326px) { /* line 1291, sass/style.scss */ .navigation-menu { width: calc(100% - 20%); }
+  /* line 1295, sass/style.scss */ .item_messages { max-width: 100%; }
+  /* line 1299, sass/style.scss */ .name { font-size: 12px; }
+  /* line 1303, sass/style.scss */ .item_user_messages { max-width: 100%; }
+  /* line 1307, sass/style.scss */ .item { width: 47%; }
+  /* line 1311, sass/style.scss */ .item_user_messages span { right: 0; top: 70px; } }
 
-@media (max-width: 872px) { /* line 1319, sass/style.scss */ .stat__wrapper { width: 100%; }
-  /* line 1323, sass/style.scss */ .scroll-wrapper { width: 100%; }
-  /* line 1327, sass/style.scss */ .box-color p { height: 100%; } }
+@media (max-width: 872px) { /* line 1318, sass/style.scss */ .stat__wrapper { width: 100%; }
+  /* line 1322, sass/style.scss */ .scroll-wrapper { width: 100%; }
+  /* line 1326, sass/style.scss */ .box-color p { height: 100%; } }
 
 @media (min-width: 768px) { /* line 98, sass/_mixins.scss */ .col-md-1 { flex: 0 0 8.33333%; max-width: 8.33333%; }
   /* line 98, sass/_mixins.scss */ .col-md-2 { flex: 0 0 16.66667%; max-width: 16.66667%; }
@@ -581,9 +581,9 @@
   /* line 98, sass/_mixins.scss */ .col-md-10 { flex: 0 0 83.33333%; max-width: 83.33333%; }
   /* line 98, sass/_mixins.scss */ .col-md-11 { flex: 0 0 91.66667%; max-width: 91.66667%; }
   /* line 98, sass/_mixins.scss */ .col-md-12 { flex: 0 0 100%; max-width: 100%; }
-  /* line 1335, sass/style.scss */ .item { margin: 23px 0 120px; }
-  /* line 1339, sass/style.scss */ .item_user_messages { width: 100%; max-width: 78%; }
-  /* line 1344, sass/style.scss */ .item_messages { width: 100%; max-width: 54%; } }
+  /* line 1334, sass/style.scss */ .item { margin: 23px 0 120px; }
+  /* line 1338, sass/style.scss */ .item_user_messages { width: 100%; max-width: 78%; }
+  /* line 1343, sass/style.scss */ .item_messages { width: 100%; max-width: 54%; } }
 
 @media (min-width: 992px) { /* line 98, sass/_mixins.scss */ .col-lg-1 { flex: 0 0 8.33333%; max-width: 8.33333%; }
   /* line 98, sass/_mixins.scss */ .col-lg-2 { flex: 0 0 16.66667%; max-width: 16.66667%; }
