@@ -785,6 +785,7 @@ header {
   &:after {
     content: "";
     @include centerLeft(0,0);
+    bottom: 97px;
     border-bottom: 1px solid $brand-border-lineTable;
     width: 100%;
   }
@@ -793,10 +794,9 @@ header {
 .triangle {
     span {
     @include centerLeft(-12px,3px);
-    width: 0;
-    height: 0;
+    @include sizeBox(0, 0);
     border-right: 11px solid transparent;
-    border-bottom: 12px solid $brand-banner-link;
+    border-bottom: 12px solid $brand-modal_messages;
     }
 }
 
@@ -891,7 +891,7 @@ header {
 }
 
 .item_messages {
-  background-color: #F3F3F1;
+  background-color: $brand-modal_messages;
   width: 33.33%;
   position: relative;
   margin: 35px 0 14px;
@@ -1081,6 +1081,10 @@ header {
            margin-bottom: 20px;
          }
       }
+    }
+
+    .user_quit {
+      color: $brand-color-white;
     }
   }
 
@@ -1273,6 +1277,13 @@ header {
         margin-top: 20px;
       }
     }
+
+    .messages_elem {
+      &:after{
+        bottom: 127px;
+      }
+    }
+
   }
 
   @media(max-width:326px) {

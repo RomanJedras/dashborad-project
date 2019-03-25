@@ -269,13 +269,13 @@
 
 /* line 302, sass/style.scss */ .form-group input { width: 313px; height: 39px; text-indent: 15px; border: 1px solid #E3E3E3; border-radius: 8px; }
 
-/* line 105, sass/_mixins.scss */ .form-group input::-webkit-input-placeholder { color: #333; }
+/* line 107, sass/_mixins.scss */ .form-group input::-webkit-input-placeholder { color: #333; }
 
-/* line 105, sass/_mixins.scss */ .form-group input:-moz-placeholder { color: #333; }
+/* line 107, sass/_mixins.scss */ .form-group input:-moz-placeholder { color: #333; }
 
-/* line 105, sass/_mixins.scss */ .form-group input::-moz-placeholder { color: #333; }
+/* line 107, sass/_mixins.scss */ .form-group input::-moz-placeholder { color: #333; }
 
-/* line 105, sass/_mixins.scss */ .form-group input:-ms-input-placeholder { color: #333; }
+/* line 107, sass/_mixins.scss */ .form-group input:-ms-input-placeholder { color: #333; }
 
 /* line 316, sass/style.scss */ .detals h4 { margin-bottom: 40px; }
 
@@ -423,9 +423,9 @@
 
 /* line 782, sass/style.scss */ .messages_elem { margin-bottom: 40px; }
 
-/* line 785, sass/style.scss */ .messages_elem:after { content: ""; top: 0; left: 0; position: absolute; border-bottom: 1px solid #dadddd; width: 100%; }
+/* line 785, sass/style.scss */ .messages_elem:after { content: ""; top: 0; left: 0; position: absolute; bottom: 97px; border-bottom: 1px solid #dadddd; width: 100%; }
 
-/* line 794, sass/style.scss */ .triangle span, .item_messages span, .item_user_messages span { top: -12px; left: 3px; position: absolute; width: 0; height: 0; border-right: 11px solid transparent; border-bottom: 12px solid #a9bfcc; }
+/* line 795, sass/style.scss */ .triangle span, .item_messages span, .item_user_messages span { top: -12px; left: 3px; position: absolute; width: 0; height: 0; display: block; border-right: 11px solid transparent; border-bottom: 12px solid #F3F3F1; }
 
 /* line 804, sass/style.scss */ .triangle_down span, .item_user_messages span { right: 0; top: 45px; border-left: 11px solid transparent; border-top: 12px solid #BABABA; border-right: none; border-bottom: none; left: 93%; }
 
@@ -478,18 +478,18 @@
 @media (max-width: 992px) { /* line 964, sass/style.scss */ .box-color { width: 100%; }
   /* line 968, sass/style.scss */ .table-padding td { font-size: 15px; } }
 
-@media (max-width: 767px) { /* line 96, sass/_mixins.scss */ .col-sm-1 { flex: 0 0 8.33333%; max-width: 8.33333%; }
-  /* line 96, sass/_mixins.scss */ .col-sm-2 { flex: 0 0 16.66667%; max-width: 16.66667%; }
-  /* line 96, sass/_mixins.scss */ .col-sm-3 { flex: 0 0 25%; max-width: 25%; }
-  /* line 96, sass/_mixins.scss */ .col-sm-4 { flex: 0 0 33.33333%; max-width: 33.33333%; }
-  /* line 96, sass/_mixins.scss */ .col-sm-5 { flex: 0 0 41.66667%; max-width: 41.66667%; }
-  /* line 96, sass/_mixins.scss */ .col-sm-6 { flex: 0 0 50%; max-width: 50%; }
-  /* line 96, sass/_mixins.scss */ .col-sm-7 { flex: 0 0 58.33333%; max-width: 58.33333%; }
-  /* line 96, sass/_mixins.scss */ .col-sm-8 { flex: 0 0 66.66667%; max-width: 66.66667%; }
-  /* line 96, sass/_mixins.scss */ .col-sm-9 { flex: 0 0 75%; max-width: 75%; }
-  /* line 96, sass/_mixins.scss */ .col-sm-10 { flex: 0 0 83.33333%; max-width: 83.33333%; }
-  /* line 96, sass/_mixins.scss */ .col-sm-11 { flex: 0 0 91.66667%; max-width: 91.66667%; }
-  /* line 96, sass/_mixins.scss */ .col-sm-12 { flex: 0 0 100%; max-width: 100%; }
+@media (max-width: 767px) { /* line 98, sass/_mixins.scss */ .col-sm-1 { flex: 0 0 8.33333%; max-width: 8.33333%; }
+  /* line 98, sass/_mixins.scss */ .col-sm-2 { flex: 0 0 16.66667%; max-width: 16.66667%; }
+  /* line 98, sass/_mixins.scss */ .col-sm-3 { flex: 0 0 25%; max-width: 25%; }
+  /* line 98, sass/_mixins.scss */ .col-sm-4 { flex: 0 0 33.33333%; max-width: 33.33333%; }
+  /* line 98, sass/_mixins.scss */ .col-sm-5 { flex: 0 0 41.66667%; max-width: 41.66667%; }
+  /* line 98, sass/_mixins.scss */ .col-sm-6 { flex: 0 0 50%; max-width: 50%; }
+  /* line 98, sass/_mixins.scss */ .col-sm-7 { flex: 0 0 58.33333%; max-width: 58.33333%; }
+  /* line 98, sass/_mixins.scss */ .col-sm-8 { flex: 0 0 66.66667%; max-width: 66.66667%; }
+  /* line 98, sass/_mixins.scss */ .col-sm-9 { flex: 0 0 75%; max-width: 75%; }
+  /* line 98, sass/_mixins.scss */ .col-sm-10 { flex: 0 0 83.33333%; max-width: 83.33333%; }
+  /* line 98, sass/_mixins.scss */ .col-sm-11 { flex: 0 0 91.66667%; max-width: 91.66667%; }
+  /* line 98, sass/_mixins.scss */ .col-sm-12 { flex: 0 0 100%; max-width: 100%; }
   /* line 976, sass/style.scss */ .input-container .border__item.sec { border-left: 1px solid #e3e3e3; width: 100%; margin-top: 10px; margin-bottom: 20px; }
   /* line 983, sass/style.scss */ .input-container .button { margin: 0 auto; width: calc(100% - 310px); }
   /* line 988, sass/style.scss */ .box-color div { margin-top: 10px; }
@@ -512,99 +512,101 @@
   /* line 1068, sass/style.scss */ .item { width: 18%; }
   /* line 1073, sass/style.scss */ .overlay .login.modal .user_login { flex-direction: column; }
   /* line 1076, sass/style.scss */ .overlay .login.modal .user_login input { text-indent: 40px; }
-  /* line 1080, sass/style.scss */ .overlay .login.modal .user_login div { margin-bottom: 20px; } }
+  /* line 1080, sass/style.scss */ .overlay .login.modal .user_login div { margin-bottom: 20px; }
+  /* line 1086, sass/style.scss */ .user_quit { color: #FFFFFF; } }
 
-@media (max-width: 646px) { /* line 1088, sass/style.scss */ .input-container .button { width: calc(100% - 63%); }
-  /* line 1092, sass/style.scss */ .charts { width: calc(100% - 50%); }
-  /* line 1096, sass/style.scss */ .font td { font-size: 9px; }
-  /* line 1100, sass/style.scss */ .item { width: 21%; }
-  /* line 1104, sass/style.scss */ .item_user_messages { width: 100%; max-width: 60%; }
-  /* line 1109, sass/style.scss */ .item_messages { width: 100%; max-width: 37%; } }
+@media (max-width: 646px) { /* line 1092, sass/style.scss */ .input-container .button { width: calc(100% - 63%); }
+  /* line 1096, sass/style.scss */ .charts { width: calc(100% - 50%); }
+  /* line 1100, sass/style.scss */ .font td { font-size: 9px; }
+  /* line 1104, sass/style.scss */ .item { width: 21%; }
+  /* line 1108, sass/style.scss */ .item_user_messages { width: 100%; max-width: 60%; }
+  /* line 1113, sass/style.scss */ .item_messages { width: 100%; max-width: 37%; } }
 
-@media (max-width: 605px) { /* line 1116, sass/style.scss */ .stat__wrapper p { font-size: 12px; line-height: 1.5; }
-  /* line 1121, sass/style.scss */ .font td { font-size: 6px; }
-  /* line 1125, sass/style.scss */ .charts { width: calc(100% - 10%); }
-  /* line 1129, sass/style.scss */ .item { width: 23%; }
-  /* line 1133, sass/style.scss */ .item_user_messages { width: 100%; max-width: 65%; }
-  /* line 1138, sass/style.scss */ .item_messages { width: 100%; max-width: 40%; } }
+@media (max-width: 605px) { /* line 1120, sass/style.scss */ .stat__wrapper p { font-size: 12px; line-height: 1.5; }
+  /* line 1125, sass/style.scss */ .font td { font-size: 6px; }
+  /* line 1129, sass/style.scss */ .charts { width: calc(100% - 10%); }
+  /* line 1133, sass/style.scss */ .item { width: 23%; }
+  /* line 1137, sass/style.scss */ .item_user_messages { width: 100%; max-width: 65%; }
+  /* line 1142, sass/style.scss */ .item_messages { width: 100%; max-width: 40%; } }
 
-@media (max-width: 543px) { /* line 1145, sass/style.scss */ .wrapper { position: relative; width: 100%; opacity: 1; display: block; }
-  /* line 1151, sass/style.scss */ .wrapper h2 { text-align: center; }
-  /* line 1156, sass/style.scss */ .hamburger { opacity: 0; }
-  /* line 1160, sass/style.scss */ header { display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-end; padding: 0; }
-  /* line 1168, sass/style.scss */ .show { width: 100%; padding: 0; }
-  /* line 1173, sass/style.scss */ .nav-horizont { background-color: #191919; color: #FFFFFF; }
-  /* line 1178, sass/style.scss */ .site-wrapper, .top__links { display: none; }
-  /* line 1182, sass/style.scss */ .top { display: none; }
-  /* line 1186, sass/style.scss */ .navigation-menu { display: flex; flex-wrap: nowrap; flex-direction: column; justify-content: space-around; width: calc(100% - 40%); margin: 0 auto; white-space: nowrap; }
-  /* line 1196, sass/style.scss */ .manager-container-elem { display: flex; border: 1px solid #333; align-items: center; justify-content: flex-start; margin: 0 auto; }
-  /* line 1203, sass/style.scss */ .manager-container-elem i { width: 83%; height: 83%; display: block; }
-  /* line 1208, sass/style.scss */ .menager-circle-item { margin-bottom: 90px; }
-  /* line 1213, sass/style.scss */ .overlay .modal h4 { font-size: 14px; }
-  /* line 1218, sass/style.scss */ .messages_elem { margin: 45px 0 0; }
-  /* line 1222, sass/style.scss */ .item_photo { margin-top: 36px; }
-  /* line 1226, sass/style.scss */ .item_messages { max-width: 61%; }
-  /* line 1230, sass/style.scss */ .item_user_messages { max-width: 75%; }
-  /* line 1234, sass/style.scss */ .item { width: 27%; }
-  /* line 1238, sass/style.scss */ section.messages_form { margin-top: 22px; } }
+@media (max-width: 543px) { /* line 1149, sass/style.scss */ .wrapper { position: relative; width: 100%; opacity: 1; display: block; }
+  /* line 1155, sass/style.scss */ .wrapper h2 { text-align: center; }
+  /* line 1160, sass/style.scss */ .hamburger { opacity: 0; }
+  /* line 1164, sass/style.scss */ header { display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-end; padding: 0; }
+  /* line 1172, sass/style.scss */ .show { width: 100%; padding: 0; }
+  /* line 1177, sass/style.scss */ .nav-horizont { background-color: #191919; color: #FFFFFF; }
+  /* line 1182, sass/style.scss */ .site-wrapper, .top__links { display: none; }
+  /* line 1186, sass/style.scss */ .top { display: none; }
+  /* line 1190, sass/style.scss */ .navigation-menu { display: flex; flex-wrap: nowrap; flex-direction: column; justify-content: space-around; width: calc(100% - 40%); margin: 0 auto; white-space: nowrap; }
+  /* line 1200, sass/style.scss */ .manager-container-elem { display: flex; border: 1px solid #333; align-items: center; justify-content: flex-start; margin: 0 auto; }
+  /* line 1207, sass/style.scss */ .manager-container-elem i { width: 83%; height: 83%; display: block; }
+  /* line 1212, sass/style.scss */ .menager-circle-item { margin-bottom: 90px; }
+  /* line 1217, sass/style.scss */ .overlay .modal h4 { font-size: 14px; }
+  /* line 1222, sass/style.scss */ .messages_elem { margin: 45px 0 0; }
+  /* line 1226, sass/style.scss */ .item_photo { margin-top: 36px; }
+  /* line 1230, sass/style.scss */ .item_messages { max-width: 61%; }
+  /* line 1234, sass/style.scss */ .item_user_messages { max-width: 75%; }
+  /* line 1238, sass/style.scss */ .item { width: 27%; }
+  /* line 1242, sass/style.scss */ section.messages_form { margin-top: 22px; } }
 
-@media (max-width: 450px) { /* line 1244, sass/style.scss */ .gl__green { left: 18px; }
-  /* line 1249, sass/style.scss */ .overlay .modal h4 { font-size: 8px; }
-  /* line 1254, sass/style.scss */ .item_user_messages { max-width: 85%; }
-  /* line 1257, sass/style.scss */ .item_user_messages p { font-size: 13px; white-space: inherit; line-height: 1.5; }
-  /* line 1264, sass/style.scss */ .item_messages { max-width: 100%; }
-  /* line 1268, sass/style.scss */ .form-messages { display: block; }
-  /* line 1271, sass/style.scss */ .form-messages .btn.btn-success { width: 40%; margin-top: 20px; } }
+@media (max-width: 450px) { /* line 1248, sass/style.scss */ .gl__green { left: 18px; }
+  /* line 1253, sass/style.scss */ .overlay .modal h4 { font-size: 8px; }
+  /* line 1258, sass/style.scss */ .item_user_messages { max-width: 85%; }
+  /* line 1261, sass/style.scss */ .item_user_messages p { font-size: 13px; white-space: inherit; line-height: 1.5; }
+  /* line 1268, sass/style.scss */ .item_messages { max-width: 100%; }
+  /* line 1272, sass/style.scss */ .form-messages { display: block; }
+  /* line 1275, sass/style.scss */ .form-messages .btn.btn-success { width: 40%; margin-top: 20px; }
+  /* line 1282, sass/style.scss */ .messages_elem:after { bottom: 127px; } }
 
-@media (max-width: 326px) { /* line 1279, sass/style.scss */ .navigation-menu { width: calc(100% - 20%); }
-  /* line 1283, sass/style.scss */ .item_messages { max-width: 100%; }
-  /* line 1287, sass/style.scss */ .name { font-size: 12px; }
-  /* line 1291, sass/style.scss */ .item_user_messages { max-width: 100%; }
-  /* line 1295, sass/style.scss */ .item { width: 47%; }
-  /* line 1299, sass/style.scss */ .item_user_messages span { right: 0; top: 70px; } }
+@media (max-width: 326px) { /* line 1290, sass/style.scss */ .navigation-menu { width: calc(100% - 20%); }
+  /* line 1294, sass/style.scss */ .item_messages { max-width: 100%; }
+  /* line 1298, sass/style.scss */ .name { font-size: 12px; }
+  /* line 1302, sass/style.scss */ .item_user_messages { max-width: 100%; }
+  /* line 1306, sass/style.scss */ .item { width: 47%; }
+  /* line 1310, sass/style.scss */ .item_user_messages span { right: 0; top: 70px; } }
 
-@media (max-width: 872px) { /* line 1306, sass/style.scss */ .stat__wrapper { width: 100%; }
-  /* line 1310, sass/style.scss */ .scroll-wrapper { width: 100%; }
-  /* line 1314, sass/style.scss */ .box-color p { height: 100%; } }
+@media (max-width: 872px) { /* line 1317, sass/style.scss */ .stat__wrapper { width: 100%; }
+  /* line 1321, sass/style.scss */ .scroll-wrapper { width: 100%; }
+  /* line 1325, sass/style.scss */ .box-color p { height: 100%; } }
 
-@media (min-width: 768px) { /* line 96, sass/_mixins.scss */ .col-md-1 { flex: 0 0 8.33333%; max-width: 8.33333%; }
-  /* line 96, sass/_mixins.scss */ .col-md-2 { flex: 0 0 16.66667%; max-width: 16.66667%; }
-  /* line 96, sass/_mixins.scss */ .col-md-3 { flex: 0 0 25%; max-width: 25%; }
-  /* line 96, sass/_mixins.scss */ .col-md-4 { flex: 0 0 33.33333%; max-width: 33.33333%; }
-  /* line 96, sass/_mixins.scss */ .col-md-5 { flex: 0 0 41.66667%; max-width: 41.66667%; }
-  /* line 96, sass/_mixins.scss */ .col-md-6 { flex: 0 0 50%; max-width: 50%; }
-  /* line 96, sass/_mixins.scss */ .col-md-7 { flex: 0 0 58.33333%; max-width: 58.33333%; }
-  /* line 96, sass/_mixins.scss */ .col-md-8 { flex: 0 0 66.66667%; max-width: 66.66667%; }
-  /* line 96, sass/_mixins.scss */ .col-md-9 { flex: 0 0 75%; max-width: 75%; }
-  /* line 96, sass/_mixins.scss */ .col-md-10 { flex: 0 0 83.33333%; max-width: 83.33333%; }
-  /* line 96, sass/_mixins.scss */ .col-md-11 { flex: 0 0 91.66667%; max-width: 91.66667%; }
-  /* line 96, sass/_mixins.scss */ .col-md-12 { flex: 0 0 100%; max-width: 100%; }
-  /* line 1322, sass/style.scss */ .item { margin: 23px 0 120px; }
-  /* line 1326, sass/style.scss */ .item_user_messages { width: 100%; max-width: 78%; }
-  /* line 1331, sass/style.scss */ .item_messages { width: 100%; max-width: 54%; } }
+@media (min-width: 768px) { /* line 98, sass/_mixins.scss */ .col-md-1 { flex: 0 0 8.33333%; max-width: 8.33333%; }
+  /* line 98, sass/_mixins.scss */ .col-md-2 { flex: 0 0 16.66667%; max-width: 16.66667%; }
+  /* line 98, sass/_mixins.scss */ .col-md-3 { flex: 0 0 25%; max-width: 25%; }
+  /* line 98, sass/_mixins.scss */ .col-md-4 { flex: 0 0 33.33333%; max-width: 33.33333%; }
+  /* line 98, sass/_mixins.scss */ .col-md-5 { flex: 0 0 41.66667%; max-width: 41.66667%; }
+  /* line 98, sass/_mixins.scss */ .col-md-6 { flex: 0 0 50%; max-width: 50%; }
+  /* line 98, sass/_mixins.scss */ .col-md-7 { flex: 0 0 58.33333%; max-width: 58.33333%; }
+  /* line 98, sass/_mixins.scss */ .col-md-8 { flex: 0 0 66.66667%; max-width: 66.66667%; }
+  /* line 98, sass/_mixins.scss */ .col-md-9 { flex: 0 0 75%; max-width: 75%; }
+  /* line 98, sass/_mixins.scss */ .col-md-10 { flex: 0 0 83.33333%; max-width: 83.33333%; }
+  /* line 98, sass/_mixins.scss */ .col-md-11 { flex: 0 0 91.66667%; max-width: 91.66667%; }
+  /* line 98, sass/_mixins.scss */ .col-md-12 { flex: 0 0 100%; max-width: 100%; }
+  /* line 1333, sass/style.scss */ .item { margin: 23px 0 120px; }
+  /* line 1337, sass/style.scss */ .item_user_messages { width: 100%; max-width: 78%; }
+  /* line 1342, sass/style.scss */ .item_messages { width: 100%; max-width: 54%; } }
 
-@media (min-width: 992px) { /* line 96, sass/_mixins.scss */ .col-lg-1 { flex: 0 0 8.33333%; max-width: 8.33333%; }
-  /* line 96, sass/_mixins.scss */ .col-lg-2 { flex: 0 0 16.66667%; max-width: 16.66667%; }
-  /* line 96, sass/_mixins.scss */ .col-lg-3 { flex: 0 0 25%; max-width: 25%; }
-  /* line 96, sass/_mixins.scss */ .col-lg-4 { flex: 0 0 33.33333%; max-width: 33.33333%; }
-  /* line 96, sass/_mixins.scss */ .col-lg-5 { flex: 0 0 41.66667%; max-width: 41.66667%; }
-  /* line 96, sass/_mixins.scss */ .col-lg-6 { flex: 0 0 50%; max-width: 50%; }
-  /* line 96, sass/_mixins.scss */ .col-lg-7 { flex: 0 0 58.33333%; max-width: 58.33333%; }
-  /* line 96, sass/_mixins.scss */ .col-lg-8 { flex: 0 0 66.66667%; max-width: 66.66667%; }
-  /* line 96, sass/_mixins.scss */ .col-lg-9 { flex: 0 0 75%; max-width: 75%; }
-  /* line 96, sass/_mixins.scss */ .col-lg-10 { flex: 0 0 83.33333%; max-width: 83.33333%; }
-  /* line 96, sass/_mixins.scss */ .col-lg-11 { flex: 0 0 91.66667%; max-width: 91.66667%; }
-  /* line 96, sass/_mixins.scss */ .col-lg-12 { flex: 0 0 100%; max-width: 100%; } }
+@media (min-width: 992px) { /* line 98, sass/_mixins.scss */ .col-lg-1 { flex: 0 0 8.33333%; max-width: 8.33333%; }
+  /* line 98, sass/_mixins.scss */ .col-lg-2 { flex: 0 0 16.66667%; max-width: 16.66667%; }
+  /* line 98, sass/_mixins.scss */ .col-lg-3 { flex: 0 0 25%; max-width: 25%; }
+  /* line 98, sass/_mixins.scss */ .col-lg-4 { flex: 0 0 33.33333%; max-width: 33.33333%; }
+  /* line 98, sass/_mixins.scss */ .col-lg-5 { flex: 0 0 41.66667%; max-width: 41.66667%; }
+  /* line 98, sass/_mixins.scss */ .col-lg-6 { flex: 0 0 50%; max-width: 50%; }
+  /* line 98, sass/_mixins.scss */ .col-lg-7 { flex: 0 0 58.33333%; max-width: 58.33333%; }
+  /* line 98, sass/_mixins.scss */ .col-lg-8 { flex: 0 0 66.66667%; max-width: 66.66667%; }
+  /* line 98, sass/_mixins.scss */ .col-lg-9 { flex: 0 0 75%; max-width: 75%; }
+  /* line 98, sass/_mixins.scss */ .col-lg-10 { flex: 0 0 83.33333%; max-width: 83.33333%; }
+  /* line 98, sass/_mixins.scss */ .col-lg-11 { flex: 0 0 91.66667%; max-width: 91.66667%; }
+  /* line 98, sass/_mixins.scss */ .col-lg-12 { flex: 0 0 100%; max-width: 100%; } }
 
-@media (max-width: 1200px) { /* line 96, sass/_mixins.scss */ .col-xl-1 { flex: 0 0 8.33333%; max-width: 8.33333%; }
-  /* line 96, sass/_mixins.scss */ .col-xl-2 { flex: 0 0 16.66667%; max-width: 16.66667%; }
-  /* line 96, sass/_mixins.scss */ .col-xl-3 { flex: 0 0 25%; max-width: 25%; }
-  /* line 96, sass/_mixins.scss */ .col-xl-4 { flex: 0 0 33.33333%; max-width: 33.33333%; }
-  /* line 96, sass/_mixins.scss */ .col-xl-5 { flex: 0 0 41.66667%; max-width: 41.66667%; }
-  /* line 96, sass/_mixins.scss */ .col-xl-6 { flex: 0 0 50%; max-width: 50%; }
-  /* line 96, sass/_mixins.scss */ .col-xl-7 { flex: 0 0 58.33333%; max-width: 58.33333%; }
-  /* line 96, sass/_mixins.scss */ .col-xl-8 { flex: 0 0 66.66667%; max-width: 66.66667%; }
-  /* line 96, sass/_mixins.scss */ .col-xl-9 { flex: 0 0 75%; max-width: 75%; }
-  /* line 96, sass/_mixins.scss */ .col-xl-10 { flex: 0 0 83.33333%; max-width: 83.33333%; }
-  /* line 96, sass/_mixins.scss */ .col-xl-11 { flex: 0 0 91.66667%; max-width: 91.66667%; }
-  /* line 96, sass/_mixins.scss */ .col-xl-12 { flex: 0 0 100%; max-width: 100%; } }
+@media (max-width: 1200px) { /* line 98, sass/_mixins.scss */ .col-xl-1 { flex: 0 0 8.33333%; max-width: 8.33333%; }
+  /* line 98, sass/_mixins.scss */ .col-xl-2 { flex: 0 0 16.66667%; max-width: 16.66667%; }
+  /* line 98, sass/_mixins.scss */ .col-xl-3 { flex: 0 0 25%; max-width: 25%; }
+  /* line 98, sass/_mixins.scss */ .col-xl-4 { flex: 0 0 33.33333%; max-width: 33.33333%; }
+  /* line 98, sass/_mixins.scss */ .col-xl-5 { flex: 0 0 41.66667%; max-width: 41.66667%; }
+  /* line 98, sass/_mixins.scss */ .col-xl-6 { flex: 0 0 50%; max-width: 50%; }
+  /* line 98, sass/_mixins.scss */ .col-xl-7 { flex: 0 0 58.33333%; max-width: 58.33333%; }
+  /* line 98, sass/_mixins.scss */ .col-xl-8 { flex: 0 0 66.66667%; max-width: 66.66667%; }
+  /* line 98, sass/_mixins.scss */ .col-xl-9 { flex: 0 0 75%; max-width: 75%; }
+  /* line 98, sass/_mixins.scss */ .col-xl-10 { flex: 0 0 83.33333%; max-width: 83.33333%; }
+  /* line 98, sass/_mixins.scss */ .col-xl-11 { flex: 0 0 91.66667%; max-width: 91.66667%; }
+  /* line 98, sass/_mixins.scss */ .col-xl-12 { flex: 0 0 100%; max-width: 100%; } }

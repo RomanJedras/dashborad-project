@@ -50,10 +50,12 @@
   width: $w;
 }
 
-@mixin sizeBox($w:100%,$h:100%,$d:block) {
+@mixin sizeBox($w:100%,$h:100%,$d:fale) {
   width: $w;
   height: $h;
-  display: $d;
+  @if ($d) {
+  display: block;
+}
 }
 
 @mixin sizeContainer($w:100%,$h:100%) {
