@@ -43,7 +43,9 @@
             <i class="icon-profile"></i><p class="login-name"> Leonardo Dicaprio</p>
           </div>
           <div class="components__quit">
-            <span class="icon-quit"></span>
+            <a href="" id="quit" class="user_quit">
+              <span class="icon-quit"></span>
+            </a>
           </div>
         </div>
       </div>
@@ -361,6 +363,23 @@
          </form>
        </div>
      </section>
+    </div>
+    <div class="login modal" id="myLogin">
+      <div class="btn-close js--close-modal">x</div>
+      <h3>LOGIN</h3>
+      <form class="user_login">
+        <div class="login_user">
+          <span class="icon-login"></span>
+          <input type="text" placeholder="login name"/>
+        </div>
+        <div class="password_user">
+          <span class="icon-password"></span>
+          <input type="password" placeholder="password name"/>
+        </div>
+        <div class="button_user">
+         <button class="btn btn-success" type="submit">Enter</button>
+        </div>
+      </form>
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>

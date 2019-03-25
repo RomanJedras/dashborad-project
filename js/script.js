@@ -87,19 +87,43 @@ document.addEventListener('keyup', function(e) {
     }
 })
 
-function openModal(modal) {
+let index = '';
+
+function openModal(index) {
     document.querySelectorAll('#overlay > *').forEach(function(modal) {
         modal.classList.remove('showModal')
     })
+
+    console.dir(index);
+
     document.querySelector('#overlay').classList.add('showModal')
-    document.querySelector('.modal').classList.add('showModal')
+
+    if (index === 'modal') {
+        document.querySelector('.modal').classList.add('showModal')
+    }else if (index === 'quit') {
+        document.querySelector('#myLogin').classList.add('showModal')
+    }
 }
+
+
+
 
 
 let button = document.getElementById('modal');
 
-  button.addEventListener('click',openModal);
+  button.addEventListener('click',function() {
+      openModal(this.id);
+  });
 
+let quit = document.getElementById('quit');
+
+
+
+ quit.addEventListener('click',function(e) {
+     e.preventDefault();
+     e.stopPropagation();
+     openModal(this.id);
+ });
 
 
 

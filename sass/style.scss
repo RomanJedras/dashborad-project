@@ -114,7 +114,20 @@ body  {
 }
 
 .box-color {
-  padding-bottom: 20px;
+  display: block;
+  width: calc(100% - 225px);
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  p {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    width: calc(100% - 40%);
+  }
 }
 
 header {
@@ -326,7 +339,7 @@ header {
 }
 
   .input-container {
-    input[type = 'text'] {
+    input[type='text'] {
     text-align: center;
     text-indent: -50px;
     max-width: 150px;
@@ -490,35 +503,18 @@ header {
     border-radius: 4px;
   }
 
-.box-color {
-  display: block;
-  width: calc(100% - 225px);
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-
-    p {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
-    margin: 0 auto;
-    width: calc(100% - 40%);
-    }
+  .glyphicon-one-fine-dot {
+    top: -4px;
   }
 
-.glyphicon-one-fine-dot {
-  top: -4px;
+  .icon-earned-green {
+    span {
+      &:first-child {
+        color: $brand-activeCheckbox-color;
+        font-size: 32px;
+     }
+   }
   }
-
-.icon-earned-green {
-  span {
-    &:first-child {
-      color: $brand-activeCheckbox-color;
-      font-size: 32px;
-    }
-  }
-}
 
 .gl-blue {
   color: $brand-legend-color;
@@ -634,6 +630,7 @@ header {
   @include centerLeft(24%,98%,absolute);
   margin-left: 26%;
   white-space: nowrap;
+
   a {
     color: $brand-color-pos;
     text-transform: none;
@@ -679,18 +676,16 @@ header {
        color: $brand-color-text;
        white-space: nowrap;
 
-       &::after {
+       &:after {
          content: "";
-         position: absolute;
+         @include centerLeft(0,0);
          border-bottom: 1px solid $brand-border-lineTable;
          width: 100%;
-         top: 0;
-         left: 0;
          padding: 22px 0;
        }
      }
 
-     input[type="text"] {
+     input[type = "text"] {
        -webkit-appearance: none;
        border: none;
      }
@@ -735,11 +730,9 @@ header {
 
     &:after {
       content: "";
-      position: absolute;
+      @include centerLeft(70px,0);
       border-bottom: 1px solid $brand-border-lineTable;
       width: 100%;
-      top: 70px;
-      left: 0;
       padding-bottom: 97px;
     }
 
@@ -773,16 +766,14 @@ header {
 }
 
 .ac {
-  position: absolute;
-  top: 60px;
-  left: 95px;
+  @include centerLeft(60px,95px);
   padding: 9px 2px;
   background-color: $brand-activeCheckbox-color;
 
   i {
     background-image: none;
     font-style: normal;
-    color: #FFF;
+    color: $brand-color-white;
     font-size: 12px;
     margin: 2px 10px;
    }
@@ -793,23 +784,20 @@ header {
 
   &:after {
     content: "";
-    position: absolute;
+    @include centerLeft(0,0);
     border-bottom: 1px solid $brand-border-lineTable;
     width: 100%;
-    left: 0;
   }
  }
 
 .triangle {
     span {
-    position: absolute;
-    top: -12px;
+    @include centerLeft(-12px,3px);
     width: 0;
     height: 0;
     border-right: 11px solid transparent;
-    border-bottom: 12px solid #F3F3F1;
-    left: 3px;
-  }
+    border-bottom: 12px solid $brand-banner-link;
+    }
 }
 
 .triangle_down {
@@ -824,6 +812,85 @@ header {
   }
 }
 
+.user_quit {
+  text-transform: none;
+  top: -10px;
+  position: relative;
+}
+
+.overlay .login.modal {
+  max-width: 640px;
+  background-color: #fff;
+  width: 100%;
+  position: relative;
+  padding: 0 20px 10px;
+
+  h3 {
+    color: $brand-color-label;
+
+    &:after {
+      content: "";
+      position: absolute;
+      border-bottom: 1px solid $brand-border-lineTable;
+      width: 100%;
+      top: 44px;
+      left: 0;
+    }
+  }
+
+  .user_login {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+
+    input {
+      -webkit-appearance: none;
+      border: 1px solid $brand-top-padding;
+      padding: 8px;
+      text-indent: 20px;
+    }
+
+    .button_user {
+      width: 100%;
+      max-width: 120px;
+    }
+
+    .btn.btn-success {
+      width: 60%;
+    }
+  }
+
+  .login_user {
+    position: relative;
+
+    span {
+       @include centerLeft(8px,2px);
+     }
+  }
+
+  .password_user {
+    position: relative;
+
+     span {
+       @include centerLeft(7px, 6px);
+       font-size: 20px;
+     }
+  }
+
+  .btn-close {
+    position: absolute;
+    top: 7px;
+    right: 0;
+    padding: 5px 10px;
+    font-size: 19px;
+    color: $brand-color-text;
+    cursor: pointer;
+  }
+}
+
 .item_messages {
   background-color: #F3F3F1;
   width: 33.33%;
@@ -835,21 +902,21 @@ header {
   @extend .triangle;
 
   .first_msg {
-      position: absolute;
-      top: 0;
-      font-size: 14px;
-      white-space: nowrap;
+    @include centerLeft(0,0);
+    font-size: 14px;
+    white-space: nowrap;
     }
  }
 
 .item_user_messages {
   background-color: #BABABA;
   padding: 3px 5px;
-  color: #FFF;
+  color: $brand-color-white;
   margin-top: 20px;
   position: relative;
   border-radius: 5px;
   max-width: 75%;
+
   p {
     font-size: 13px;
     white-space: nowrap;
@@ -1002,6 +1069,20 @@ header {
     .item {
       width: 18%;
     }
+
+    .overlay .login.modal {
+      .user_login {
+        flex-direction: column;
+
+        input {
+          text-indent: 40px;
+        }
+
+         div {
+           margin-bottom: 20px;
+         }
+      }
+    }
   }
 
   @media(max-width: 646px) {
@@ -1059,7 +1140,6 @@ header {
       width: 100%;
       max-width: 40%;
     }
-
   }
 
   @media (max-width: 543px) {
@@ -1159,7 +1239,6 @@ header {
     section.messages_form {
       margin-top: 22px;
     }
-
   }
 
   @media(max-width: 450px){
@@ -1181,7 +1260,6 @@ header {
         white-space: inherit;
         line-height: 1.5;
       }
-
     }
 
     .item_messages {
@@ -1196,8 +1274,6 @@ header {
         margin-top: 20px;
       }
     }
-
-
   }
 
   @media(max-width:326px) {
@@ -1225,7 +1301,6 @@ header {
       right: 0;
       top: 70px;
     }
-
   }
 
   @media(max-width: 872px) {
@@ -1258,7 +1333,6 @@ header {
       width: 100%;
       max-width: 54%;
     }
-
   }
 
   @media(min-width: 992px) {
