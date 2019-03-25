@@ -820,7 +820,7 @@ header {
 
 .overlay .login.modal {
   max-width: 640px;
-  background-color: #fff;
+  background-color: $brand-color-white;
   width: 100%;
   position: relative;
   padding: 0 20px 10px;
@@ -830,11 +830,9 @@ header {
 
     &:after {
       content: "";
-      position: absolute;
+      @include centerLeft(44px,0);
       border-bottom: 1px solid $brand-border-lineTable;
       width: 100%;
-      top: 44px;
-      left: 0;
     }
   }
 
@@ -851,6 +849,7 @@ header {
       border: 1px solid $brand-top-padding;
       padding: 8px;
       text-indent: 20px;
+      border-radius: 3px;
     }
 
     .button_user {
@@ -859,7 +858,7 @@ header {
     }
 
     .btn.btn-success {
-      width: 60%;
+      width: 100%;
     }
   }
 
