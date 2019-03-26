@@ -544,7 +544,7 @@
   /* line 1207, sass/style.scss */ .navigation-menu { display: flex; flex-wrap: nowrap; flex-direction: column; justify-content: space-around; width: calc(100% - 40%); margin: 0 auto; white-space: nowrap; }
   /* line 1217, sass/style.scss */ .manager-container-elem { display: flex; border: 1px solid #333; align-items: center; justify-content: flex-start; margin: 0 auto 20px; }
   /* line 1224, sass/style.scss */ .manager-container-elem i { width: 83%; height: 83%; display: block; }
-  /* line 1229, sass/style.scss */ .menager-circle-item { margin-bottom: 90px; width: calc(100% - 81px); }
+  /* line 1229, sass/style.scss */ .menager-circle-item { margin-bottom: 40px; width: calc(100% - 81px); }
   /* line 1235, sass/style.scss */ .overlay .modal h4 { font-size: 14px; }
   /* line 1240, sass/style.scss */ .messages_elem { margin: 45px 0 0; width: 160px; }
   /* line 1245, sass/style.scss */ .item_photo { margin-top: 36px; }
