@@ -757,8 +757,7 @@ header {
 
       i {
         background-size: cover;
-        width: 100%;
-        height: 100%;
+        @include sizeButton();
         top: 0;
         left: 0;
       }
@@ -1255,6 +1254,14 @@ header {
       h4 {
         font-size: 8px;
       }
+
+      input[type="text"] {
+        text-align: center;
+      }
+    }
+
+    .icon-message.pos {
+      @include centerLeft(3px,6px,relative);
     }
 
     .item_user_messages {
@@ -1272,11 +1279,15 @@ header {
     }
 
     .form-messages {
-      display: block;
+      flex-direction: column;
 
       .btn.btn-success {
         width: 40%;
-        margin-top: 20px;
+        margin: 8px auto;
+      }
+
+      .form-border {
+        padding: 0;
       }
     }
 
