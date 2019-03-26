@@ -1204,6 +1204,11 @@ header {
       margin-bottom: 10px;
     }
 
+    .components__quit {
+      border-bottom: 1px solid $brand-bk-g-c;
+      width: 100%;
+    }
+
     .navigation-menu {
       display: flex;
       flex-wrap: nowrap;
