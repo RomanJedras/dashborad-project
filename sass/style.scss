@@ -1209,6 +1209,11 @@ header {
       width: 100%;
     }
 
+    .user_quit {
+      width: calc(100% - 201px);
+      height: 40px;
+    }
+
     .navigation-menu {
       display: flex;
       flex-wrap: nowrap;
