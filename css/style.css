@@ -542,7 +542,7 @@
   /* line 1196, sass/style.scss */ .show { width: 100%; padding: 0; }
   /* line 1201, sass/style.scss */ .nav-horizont { background-color: #191919; color: #FFFFFF; margin-bottom: 10px; }
   /* line 1207, sass/style.scss */ .components__quit { border-bottom: 1px solid #f5f5f2; width: 100%; }
-  /* line 1212, sass/style.scss */ .user_quit { width: calc(100% - 201px); height: 40px; }
+  /* line 1212, sass/style.scss */ .user_quit { width: calc(100% - 201px); margin: 0 auto; }
   /* line 1217, sass/style.scss */ .navigation-menu { display: flex; flex-wrap: nowrap; flex-direction: column; justify-content: space-around; width: calc(100% - 40%); margin: 0 auto; white-space: nowrap; }
   /* line 1227, sass/style.scss */ .manager-container-elem { display: flex; border: 1px solid #333; align-items: center; justify-content: flex-start; margin: 0 auto 20px; }
   /* line 1234, sass/style.scss */ .manager-container-elem i { width: 83%; height: 83%; display: block; }
