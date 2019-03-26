@@ -529,48 +529,52 @@
   /* line 1138, sass/style.scss */ .item_user_messages { width: 100%; max-width: 65%; }
   /* line 1143, sass/style.scss */ .item_messages { width: 100%; max-width: 40%; } }
 
-@media (max-width: 543px) { /* line 1150, sass/style.scss */ .wrapper { position: relative; width: 100%; opacity: 1; display: block; }
-  /* line 1156, sass/style.scss */ .wrapper h2 { text-align: center; }
-  /* line 1161, sass/style.scss */ .hamburger { opacity: 0; }
-  /* line 1165, sass/style.scss */ header { display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-end; padding: 0; }
-  /* line 1173, sass/style.scss */ .show { width: 100%; padding: 0; }
-  /* line 1178, sass/style.scss */ .nav-horizont { background-color: #191919; color: #FFFFFF; }
-  /* line 1183, sass/style.scss */ .site-wrapper, .top__links { display: none; }
-  /* line 1187, sass/style.scss */ .top { display: none; }
-  /* line 1191, sass/style.scss */ .navigation-menu { display: flex; flex-wrap: nowrap; flex-direction: column; justify-content: space-around; width: calc(100% - 40%); margin: 0 auto; white-space: nowrap; }
-  /* line 1201, sass/style.scss */ .manager-container-elem { display: flex; border: 1px solid #333; align-items: center; justify-content: flex-start; margin: 0 auto; }
-  /* line 1208, sass/style.scss */ .manager-container-elem i { width: 83%; height: 83%; display: block; }
-  /* line 1213, sass/style.scss */ .menager-circle-item { margin-bottom: 90px; }
-  /* line 1218, sass/style.scss */ .overlay .modal h4 { font-size: 14px; }
-  /* line 1223, sass/style.scss */ .messages_elem { margin: 45px 0 0; }
-  /* line 1227, sass/style.scss */ .item_photo { margin-top: 36px; }
-  /* line 1231, sass/style.scss */ .item_messages { max-width: 61%; }
-  /* line 1235, sass/style.scss */ .item_user_messages { max-width: 75%; }
-  /* line 1239, sass/style.scss */ .item { width: 27%; }
-  /* line 1243, sass/style.scss */ section.messages_form { margin-top: 22px; } }
+@media (max-width: 543px) { /* line 1150, sass/style.scss */ .wrapper { width: 100%; }
+  /* line 1153, sass/style.scss */ .wrapper h2 { width: calc(100% - 120px); margin: 20px auto; }
+  /* line 1159, sass/style.scss */ .width, .link-nav { z-index: 0; }
+  /* line 1163, sass/style.scss */ .table-padding td, .space a, .baner .banners td { font-size: 8px; white-space: nowrap; }
+  /* line 1170, sass/style.scss */ .detals_ps label { font-size: 9px; }
+  /* line 1174, sass/style.scss */ .overlay .modal .btn-close { top: 2px; right: 42px; }
+  /* line 1179, sass/style.scss */ .hamburger { opacity: 1; }
+  /* line 1182, sass/style.scss */ .hamburger.open { left: 210px; top: -30px; }
+  /* line 1188, sass/style.scss */ .icon { display: none; }
+  /* line 1192, sass/style.scss */ header { display: none; }
+  /* line 1196, sass/style.scss */ .show { width: 100%; padding: 0; }
+  /* line 1201, sass/style.scss */ .nav-horizont { background-color: #191919; color: #FFFFFF; margin-bottom: 90px; }
+  /* line 1207, sass/style.scss */ .navigation-menu { display: flex; flex-wrap: nowrap; flex-direction: column; justify-content: space-around; width: calc(100% - 40%); margin: 0 auto; white-space: nowrap; }
+  /* line 1217, sass/style.scss */ .manager-container-elem { display: flex; border: 1px solid #333; align-items: center; justify-content: flex-start; margin: 0 auto 20px; }
+  /* line 1224, sass/style.scss */ .manager-container-elem i { width: 83%; height: 83%; display: block; }
+  /* line 1229, sass/style.scss */ .menager-circle-item { margin-bottom: 90px; width: calc(100% - 81px); }
+  /* line 1235, sass/style.scss */ .overlay .modal h4 { font-size: 14px; }
+  /* line 1240, sass/style.scss */ .messages_elem { margin: 45px 0 0; width: 160px; }
+  /* line 1245, sass/style.scss */ .item_photo { margin-top: 36px; }
+  /* line 1249, sass/style.scss */ .item_messages { max-width: 61%; }
+  /* line 1253, sass/style.scss */ .item_user_messages { max-width: 75%; }
+  /* line 1257, sass/style.scss */ .item { width: 27%; }
+  /* line 1261, sass/style.scss */ section.messages_form { margin-top: 22px; } }
 
-@media (max-width: 450px) { /* line 1249, sass/style.scss */ .gl__green { left: 18px; }
-  /* line 1254, sass/style.scss */ .overlay .modal h4 { font-size: 8px; }
-  /* line 1258, sass/style.scss */ .overlay .modal input[type="text"] { text-align: center; }
-  /* line 1263, sass/style.scss */ .icon-message.pos { top: 3px; left: 6px; position: relative; }
-  /* line 1267, sass/style.scss */ .item_user_messages { max-width: 85%; }
-  /* line 1270, sass/style.scss */ .item_user_messages p { font-size: 13px; white-space: inherit; line-height: 1.5; }
-  /* line 1277, sass/style.scss */ .item_messages { max-width: 100%; }
-  /* line 1281, sass/style.scss */ .form-messages { flex-direction: column; }
-  /* line 1284, sass/style.scss */ .form-messages .btn.btn-success { width: 40%; margin: 8px auto; }
-  /* line 1289, sass/style.scss */ .form-messages .form-border { padding: 0; }
-  /* line 1295, sass/style.scss */ .messages_elem:after { bottom: 127px; } }
+@media (max-width: 450px) { /* line 1267, sass/style.scss */ .gl__green { left: 18px; }
+  /* line 1272, sass/style.scss */ .overlay .modal h4 { font-size: 8px; }
+  /* line 1276, sass/style.scss */ .overlay .modal input[type="text"] { text-align: center; }
+  /* line 1281, sass/style.scss */ .icon-message.pos { top: 3px; left: 6px; position: relative; }
+  /* line 1285, sass/style.scss */ .item_user_messages { max-width: 85%; }
+  /* line 1288, sass/style.scss */ .item_user_messages p { font-size: 13px; white-space: inherit; line-height: 1.5; }
+  /* line 1295, sass/style.scss */ .item_messages { max-width: 100%; }
+  /* line 1299, sass/style.scss */ .form-messages { flex-direction: column; }
+  /* line 1302, sass/style.scss */ .form-messages .btn.btn-success { width: 40%; margin: 8px auto; }
+  /* line 1307, sass/style.scss */ .form-messages .form-border { padding: 0; }
+  /* line 1313, sass/style.scss */ .messages_elem:after { bottom: 127px; } }
 
-@media (max-width: 326px) { /* line 1302, sass/style.scss */ .navigation-menu { width: calc(100% - 20%); }
-  /* line 1306, sass/style.scss */ .item_messages { max-width: 100%; }
-  /* line 1310, sass/style.scss */ .name { font-size: 12px; }
-  /* line 1314, sass/style.scss */ .item_user_messages { max-width: 100%; }
-  /* line 1318, sass/style.scss */ .item { width: 47%; }
-  /* line 1322, sass/style.scss */ .item_user_messages span { right: 0; top: 70px; } }
+@media (max-width: 326px) { /* line 1320, sass/style.scss */ .navigation-menu { width: calc(100% - 20%); }
+  /* line 1324, sass/style.scss */ .item_messages { max-width: 100%; }
+  /* line 1328, sass/style.scss */ .name { font-size: 12px; }
+  /* line 1332, sass/style.scss */ .item_user_messages { max-width: 100%; }
+  /* line 1336, sass/style.scss */ .item { width: 47%; }
+  /* line 1340, sass/style.scss */ .item_user_messages span { right: 0; top: 70px; } }
 
-@media (max-width: 872px) { /* line 1329, sass/style.scss */ .stat__wrapper { width: 100%; }
-  /* line 1333, sass/style.scss */ .scroll-wrapper { width: 100%; }
-  /* line 1337, sass/style.scss */ .box-color p { height: 100%; } }
+@media (max-width: 872px) { /* line 1347, sass/style.scss */ .stat__wrapper { width: 100%; }
+  /* line 1351, sass/style.scss */ .scroll-wrapper { width: 100%; }
+  /* line 1355, sass/style.scss */ .box-color p { height: 100%; } }
 
 @media (min-width: 768px) { /* line 98, sass/_mixins.scss */ .col-md-1 { flex: 0 0 8.33333%; max-width: 8.33333%; }
   /* line 98, sass/_mixins.scss */ .col-md-2 { flex: 0 0 16.66667%; max-width: 16.66667%; }
@@ -584,9 +588,10 @@
   /* line 98, sass/_mixins.scss */ .col-md-10 { flex: 0 0 83.33333%; max-width: 83.33333%; }
   /* line 98, sass/_mixins.scss */ .col-md-11 { flex: 0 0 91.66667%; max-width: 91.66667%; }
   /* line 98, sass/_mixins.scss */ .col-md-12 { flex: 0 0 100%; max-width: 100%; }
-  /* line 1345, sass/style.scss */ .item { margin: 23px 0 120px; }
-  /* line 1349, sass/style.scss */ .item_user_messages { width: 100%; max-width: 78%; }
-  /* line 1354, sass/style.scss */ .item_messages { width: 100%; max-width: 54%; } }
+  /* line 1363, sass/style.scss */ .item { margin: 23px 0 120px; }
+  /* line 1367, sass/style.scss */ .item_user_messages { width: 100%; max-width: 78%; }
+  /* line 1372, sass/style.scss */ .item_messages { width: 100%; max-width: 54%; }
+  /* line 1377, sass/style.scss */ .menu-bt { display: none; } }
 
 @media (min-width: 992px) { /* line 98, sass/_mixins.scss */ .col-lg-1 { flex: 0 0 8.33333%; max-width: 8.33333%; }
   /* line 98, sass/_mixins.scss */ .col-lg-2 { flex: 0 0 16.66667%; max-width: 16.66667%; }

@@ -94,36 +94,50 @@ function openModal(index) {
         modal.classList.remove('showModal')
     })
 
-    console.dir(index);
-
     document.querySelector('#overlay').classList.add('showModal')
 
     if (index === 'modal') {
-        document.querySelector('.modal').classList.add('showModal')
+        document.querySelector('.modal').classList.add('showModal');
     }else if (index === 'quit') {
-        document.querySelector('#myLogin').classList.add('showModal')
+        document.querySelector('#myLogin').classList.add('showModal');
     }
 }
 
+let quitClick = document.querySelector('.components__quit a');
 
-
+         quitClick.addEventListener('click', function(event) {
+             event.preventDefault();
+             event.stopPropagation();
+             document.querySelector('#overlay').classList.add('showModal');
+             document.querySelector('#myLogin').classList.add('showModal');
+             return false;
+         });
 
 
 let button = document.getElementById('modal');
 
-  button.addEventListener('click',function() {
+  button.addEventListener('click',function(e) {
+      e.stopPropagation();
+      e.preventDefault();
       openModal(this.id);
   });
 
 let quit = document.getElementById('quit');
 
-
-
- quit.addEventListener('click',function(e) {
+quit.addEventListener('click',function(e) {
+     console.log(this)
      e.preventDefault();
      e.stopPropagation();
      openModal(this.id);
  });
+
+(function(){
+    const topbar = document.getElementById('topbar').innerHTML;
+    const top = document.getElementById('top');
+     top.className = 'nav-horizont menu menu-bt';
+      top.insertAdjacentHTML('beforeend',topbar);
+      })();
+
 
 
 
@@ -139,6 +153,7 @@ const personalData = document.getElementById('detal-per');
 for (let i = 0; i < ulList.childElementCount; i++) {
     list[i].addEventListener("click", function(event) {
         event.preventDefault();
+        event.stopPropagation();
 
         if (this.textContent === 'General' ) {
             links.classList.remove('hidden');

@@ -1148,26 +1148,49 @@ header {
 
   @media (max-width: 543px) {
     .wrapper {
-      position: relative;
       width: 100%;
-      opacity: 1;
-      display: block;
 
       h2 {
-        text-align: center;
+        width: calc(100% - 120px);
+        margin: 20px auto;
       }
     }
 
+    .width, .link-nav {
+      z-index: 0;
+    }
+
+    .table-padding td,
+    .space a,
+    .baner .banners td {
+      font-size: 8px;
+      white-space: nowrap;
+    }
+
+    .detals_ps label {
+      font-size: 9px;
+    }
+
+    .overlay .modal .btn-close {
+      top: 2px;
+      right: 42px
+    }
+
     .hamburger {
-      opacity: 0;
+      opacity: 1;
+
+      &.open {
+          left: 210px;
+          top: -30px;
+        }
+      }
+
+    .icon {
+      display: none;
     }
 
     header {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: flex-end;
-      padding: 0;
+      display: none;
     }
 
     .show {
@@ -1178,14 +1201,7 @@ header {
     .nav-horizont {
       background-color: $back-color;
       color: $brand-color-white;
-    }
-
-    .site-wrapper, .top__links {
-      display: none;
-    }
-
-    .top {
-      display: none;
+      margin-bottom: 90px;
     }
 
     .navigation-menu {
@@ -1203,7 +1219,7 @@ header {
       border: 1px solid #333;
       align-items: center;
       justify-content: flex-start;
-      margin: 0 auto;
+      margin: 0 auto 20px;
 
       i {
         @include sizeBox(83%,83%);
@@ -1212,6 +1228,7 @@ header {
 
     .menager-circle-item {
       margin-bottom: 90px;
+      width: calc(100% - 81px);
     }
 
     .overlay .modal {
@@ -1222,6 +1239,7 @@ header {
 
     .messages_elem {
       margin: 45px 0 0;
+      width: 160px;
     }
 
     .item_photo {
@@ -1354,6 +1372,10 @@ header {
     .item_messages {
       width: 100%;
       max-width: 54%;
+    }
+
+    .menu-bt {
+      display: none;
     }
   }
 
