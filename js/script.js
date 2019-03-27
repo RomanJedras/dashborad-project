@@ -131,20 +131,12 @@ let button = document.getElementById('modal');
    openModal(this.id);
  });
 
-
-
-
-
  (function(){
    const topbar = document.getElementById('topbar').innerHTML;
    const top = document.getElementById('top');
    top.className = 'nav-horizont menu menu-bt';
-   const bell = document.getElementById('not');
    top.insertAdjacentHTML('beforeend',topbar);
-   console.log(bell)
-
-
-  })();
+ })();
 
    const ulList = document.getElementById("nav"),
          list = ulList.getElementsByClassName("nav-item");
