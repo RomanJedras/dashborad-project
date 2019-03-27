@@ -18,6 +18,7 @@
         sidebar.classList.toggle('menu-open');
         siteWraper.classList.toggle('width');
         linkItem.classList.toggle('link-nav');
+
     })
 
 
@@ -69,7 +70,7 @@
     }
 
     document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
-         btn.addEventListener('click', function(e) {
+        btn.addEventListener('click', function(e) {
         e.preventDefault();
         closeModal()
     })
@@ -89,12 +90,12 @@ document.addEventListener('keyup', function(e) {
 
 let index = '';
 
-    function openModal(index) {
-        document.querySelectorAll('#overlay > *').forEach(function(modal) {
-        modal.classList.remove('showModal')
-    })
+  function openModal(index) {
+    document.querySelectorAll('#overlay > *').forEach(function(modal) {
+     modal.classList.remove('showModal')
+    });
 
-        document.querySelector('#overlay').classList.add('showModal')
+    document.querySelector('#overlay').classList.add('showModal')
 
     if (index === 'modal') {
       document.querySelector('.modal').classList.add('showModal');
@@ -130,11 +131,19 @@ let button = document.getElementById('modal');
    openModal(this.id);
  });
 
+
+
+
+
  (function(){
    const topbar = document.getElementById('topbar').innerHTML;
    const top = document.getElementById('top');
    top.className = 'nav-horizont menu menu-bt';
+   const bell = document.getElementById('not');
    top.insertAdjacentHTML('beforeend',topbar);
+   console.log(bell)
+
+
   })();
 
    const ulList = document.getElementById("nav"),
@@ -225,6 +234,7 @@ let button = document.getElementById('modal');
       document.querySelector('header').classList.toggle('show', visible);
       document.querySelector('table').classList.toggle('font', visible);
       document.querySelector('#nav-icon1').classList.remove('hamburger-left"', visible);
+      document.querySelector('#ln').classList.toggle('st', visible);
     }
 
     document.querySelector('#nav-icon1').addEventListener('click', function(e) {
